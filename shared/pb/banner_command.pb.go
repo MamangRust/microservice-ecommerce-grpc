@@ -230,7 +230,7 @@ const file_banner_banner_command_proto_rawDesc = "" +
 	"\x0fDeletePermanent\x12\x19.pb.FindByIdBannerRequest\x1a\x1b.pb.ApiResponseBannerDelete\x12>\n" +
 	"\n" +
 	"RestoreAll\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseBannerAll\x12=\n" +
-	"\tDeleteAll\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseBannerAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\tDeleteAll\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseBannerAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_banner_banner_command_proto_rawDescOnce sync.Once

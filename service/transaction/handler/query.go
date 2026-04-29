@@ -3,11 +3,11 @@ package handler
 import (
 	"context"
 
-	"github.com/MamangRust/monolith-ecommerce-grpc-transaction/service"
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-grpc-transaction/service"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 )
 
 type transactionQueryHandler struct {

@@ -3,9 +3,9 @@ package repository
 import (
 	"context"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	shippingaddress_errors "github.com/MamangRust/monolith-ecommerce-shared/errors/shipping_address_errors"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	shippingaddress_errors "github.com/MamangRust/microservice-ecommerce-shared/errors/shipping_address_errors"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 )
 
 type shippingAddressQueryRepository struct {

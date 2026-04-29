@@ -289,7 +289,7 @@ const file_product_product_query_proto_rawDesc = "" +
 	"\x0eFindByCategory\x12!.pb.FindAllProductCategoryRequest\x1a .pb.ApiResponsePaginationProduct\x12>\n" +
 	"\bFindById\x12\x1a.pb.FindByIdProductRequest\x1a\x16.pb.ApiResponseProduct\x12S\n" +
 	"\fFindByActive\x12\x19.pb.FindAllProductRequest\x1a(.pb.ApiResponsePaginationProductDeleteAt\x12T\n" +
-	"\rFindByTrashed\x12\x19.pb.FindAllProductRequest\x1a(.pb.ApiResponsePaginationProductDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x19.pb.FindAllProductRequest\x1a(.pb.ApiResponsePaginationProductDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_product_product_query_proto_rawDescOnce sync.Once

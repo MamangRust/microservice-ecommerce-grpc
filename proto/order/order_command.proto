@@ -7,7 +7,7 @@ import "order/order_common.proto";
 
 import "shipping_address/shipping_address_command.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message CreateOrderRequest {
     int32 merchant_id = 1;

@@ -153,7 +153,7 @@ const file_slider_slider_command_proto_rawDesc = "" +
 	"\rRestoreSlider\x12\x19.pb.FindByIdSliderRequest\x1a\x1d.pb.ApiResponseSliderDeleteAt\x12O\n" +
 	"\x15DeleteSliderPermanent\x12\x19.pb.FindByIdSliderRequest\x1a\x1b.pb.ApiResponseSliderDelete\x12D\n" +
 	"\x10RestoreAllSlider\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseSliderAll\x12L\n" +
-	"\x18DeleteAllSliderPermanent\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseSliderAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x18DeleteAllSliderPermanent\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseSliderAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_slider_slider_command_proto_rawDescOnce sync.Once

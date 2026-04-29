@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"github.com/MamangRust/monolith-ecommerce-grpc-merchant_business/service"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-grpc-merchant_business/service"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
 )
 
 type Deps struct {

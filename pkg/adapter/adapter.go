@@ -3,8 +3,8 @@ package adapter
 import (
 	"context"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	user_repo "github.com/MamangRust/monolith-ecommerce-grpc-user/repository"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	user_repo "github.com/MamangRust/microservice-ecommerce-grpc-user/repository"
 )
 
 type UserAdapter interface {

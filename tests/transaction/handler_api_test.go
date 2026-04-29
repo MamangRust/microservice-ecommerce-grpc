@@ -11,12 +11,12 @@ import (
 	"net/url"
 	"strings"
 
-	transaction_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/transaction"
-	transactionhandler "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/handler/transaction"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/transaction"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-shared/errors"
+	transaction_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/transaction"
+	transactionhandler "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/handler/transaction"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/transaction"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/errors"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/suite"
 )

@@ -3,11 +3,11 @@ package handler
 import (
 	"context"
 
-	"github.com/MamangRust/monolith-ecommerce-auth/service"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	"github.com/MamangRust/monolith-ecommerce-shared/errors"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-auth/service"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	"github.com/MamangRust/microservice-ecommerce-shared/errors"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
 	"go.uber.org/zap"
 )
 

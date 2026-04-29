@@ -1,11 +1,11 @@
 package service
 
 import (
-	merchantCache "github.com/MamangRust/monolith-ecommerce-grpc-merchant/cache"
-	"github.com/MamangRust/monolith-ecommerce-grpc-merchant/repository"
-	"github.com/MamangRust/monolith-ecommerce-pkg/kafka"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
+	merchantCache "github.com/MamangRust/microservice-ecommerce-grpc-merchant/cache"
+	"github.com/MamangRust/microservice-ecommerce-grpc-merchant/repository"
+	"github.com/MamangRust/microservice-ecommerce-pkg/kafka"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
 )
 
 type Service struct {

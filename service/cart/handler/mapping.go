@@ -3,8 +3,8 @@ package handler
 import (
 	"math"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 )
 
 func normalizePage(page, pageSize int) (int, int) {

@@ -1,9 +1,9 @@
-module github.com/MamangRust/monolith-ecommerce-shared
+module github.com/MamangRust/microservice-ecommerce-shared
 
 go 1.25.0
 
 require (
-	github.com/MamangRust/monolith-ecommerce-pkg v1.0.18
+	github.com/MamangRust/microservice-ecommerce-pkg v1.0.18
 	github.com/go-playground/validator/v10 v10.30.1
 	github.com/labstack/echo/v4 v4.15.0
 	github.com/redis/go-redis/v9 v9.18.0

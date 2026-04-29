@@ -1,32 +1,32 @@
-module github.com/MamangRust/monolith-ecommerce-test
+module github.com/MamangRust/microservice-ecommerce-test
 
 go 1.25.1
 
 require (
-	github.com/MamangRust/monolith-ecommerce-auth v1.0.0
-	github.com/MamangRust/monolith-ecommerce-grpc-apigateway v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-banner v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-cart v1.0.0
-	github.com/MamangRust/monolith-ecommerce-grpc-category v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant v1.0.0
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant_award v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant_business v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant_detail v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant_policy v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-order v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-order-item v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-product v1.0.0
-	github.com/MamangRust/monolith-ecommerce-grpc-review v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-review-detail v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-role v1.0.0
-	github.com/MamangRust/monolith-ecommerce-grpc-shipping-address v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-slider v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-transaction v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-grpc-user v1.0.0
-	github.com/MamangRust/monolith-ecommerce-grpc/service/stats-reader v0.0.0
-	github.com/MamangRust/monolith-ecommerce-grpc/service/stats-writer v0.0.0-00010101000000-000000000000
-	github.com/MamangRust/monolith-ecommerce-pkg v1.0.28
-	github.com/MamangRust/monolith-ecommerce-shared v1.0.28
+	github.com/MamangRust/microservice-ecommerce-auth v1.0.0
+	github.com/MamangRust/microservice-ecommerce-grpc-apigateway v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-banner v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-cart v1.0.0
+	github.com/MamangRust/microservice-ecommerce-grpc-category v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant v1.0.0
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant_award v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant_business v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant_detail v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant_policy v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-order v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-order-item v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-product v1.0.0
+	github.com/MamangRust/microservice-ecommerce-grpc-review v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-review-detail v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-role v1.0.0
+	github.com/MamangRust/microservice-ecommerce-grpc-shipping-address v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-slider v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-transaction v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-grpc-user v1.0.0
+	github.com/MamangRust/microservice-ecommerce-grpc/service/stats-reader v0.0.0
+	github.com/MamangRust/microservice-ecommerce-grpc/service/stats-writer v0.0.0-00010101000000-000000000000
+	github.com/MamangRust/microservice-ecommerce-pkg v1.0.28
+	github.com/MamangRust/microservice-ecommerce-shared v1.0.28
 	github.com/jackc/pgx/v5 v5.9.1
 	github.com/labstack/echo/v4 v4.15.0
 	github.com/pressly/goose/v3 v3.24.3
@@ -158,28 +158,28 @@ require (
 )
 
 replace (
-	github.com/MamangRust/monolith-ecommerce-auth => ../service/auth
-	github.com/MamangRust/monolith-ecommerce-grpc-apigateway => ../service/apigateway
-	github.com/MamangRust/monolith-ecommerce-grpc-banner => ../service/banner
-	github.com/MamangRust/monolith-ecommerce-grpc-cart => ../service/cart
-	github.com/MamangRust/monolith-ecommerce-grpc-category => ../service/category
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant => ../service/merchant
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant_award => ../service/merchant_award
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant_business => ../service/merchant_business
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant_detail => ../service/merchant_detail
-	github.com/MamangRust/monolith-ecommerce-grpc-merchant_policy => ../service/merchant_policy
-	github.com/MamangRust/monolith-ecommerce-grpc-order => ../service/order
-	github.com/MamangRust/monolith-ecommerce-grpc-order-item => ../service/order_item
-	github.com/MamangRust/monolith-ecommerce-grpc-product => ../service/product
-	github.com/MamangRust/monolith-ecommerce-grpc-review => ../service/review
-	github.com/MamangRust/monolith-ecommerce-grpc-review-detail => ../service/review_detail
-	github.com/MamangRust/monolith-ecommerce-grpc-role => ../service/role
-	github.com/MamangRust/monolith-ecommerce-grpc-shipping-address => ../service/shipping_address
-	github.com/MamangRust/monolith-ecommerce-grpc-slider => ../service/slider
-	github.com/MamangRust/monolith-ecommerce-grpc-transaction => ../service/transaction
-	github.com/MamangRust/monolith-ecommerce-grpc-user => ../service/user
-	github.com/MamangRust/monolith-ecommerce-grpc/service/stats-reader => ../service/stats-reader
-	github.com/MamangRust/monolith-ecommerce-grpc/service/stats-writer => ../service/stats-writer
-	github.com/MamangRust/monolith-ecommerce-pkg => ../pkg
-	github.com/MamangRust/monolith-ecommerce-shared => ../shared
+	github.com/MamangRust/microservice-ecommerce-auth => ../service/auth
+	github.com/MamangRust/microservice-ecommerce-grpc-apigateway => ../service/apigateway
+	github.com/MamangRust/microservice-ecommerce-grpc-banner => ../service/banner
+	github.com/MamangRust/microservice-ecommerce-grpc-cart => ../service/cart
+	github.com/MamangRust/microservice-ecommerce-grpc-category => ../service/category
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant => ../service/merchant
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant_award => ../service/merchant_award
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant_business => ../service/merchant_business
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant_detail => ../service/merchant_detail
+	github.com/MamangRust/microservice-ecommerce-grpc-merchant_policy => ../service/merchant_policy
+	github.com/MamangRust/microservice-ecommerce-grpc-order => ../service/order
+	github.com/MamangRust/microservice-ecommerce-grpc-order-item => ../service/order_item
+	github.com/MamangRust/microservice-ecommerce-grpc-product => ../service/product
+	github.com/MamangRust/microservice-ecommerce-grpc-review => ../service/review
+	github.com/MamangRust/microservice-ecommerce-grpc-review-detail => ../service/review_detail
+	github.com/MamangRust/microservice-ecommerce-grpc-role => ../service/role
+	github.com/MamangRust/microservice-ecommerce-grpc-shipping-address => ../service/shipping_address
+	github.com/MamangRust/microservice-ecommerce-grpc-slider => ../service/slider
+	github.com/MamangRust/microservice-ecommerce-grpc-transaction => ../service/transaction
+	github.com/MamangRust/microservice-ecommerce-grpc-user => ../service/user
+	github.com/MamangRust/microservice-ecommerce-grpc/service/stats-reader => ../service/stats-reader
+	github.com/MamangRust/microservice-ecommerce-grpc/service/stats-writer => ../service/stats-writer
+	github.com/MamangRust/microservice-ecommerce-pkg => ../pkg
+	github.com/MamangRust/microservice-ecommerce-shared => ../shared
 )

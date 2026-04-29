@@ -1,11 +1,11 @@
 package service
 
 import (
-	"github.com/MamangRust/monolith-ecommerce-grpc-user/cache"
-	"github.com/MamangRust/monolith-ecommerce-grpc-user/repository"
-	"github.com/MamangRust/monolith-ecommerce-pkg/hash"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
+	"github.com/MamangRust/microservice-ecommerce-grpc-user/cache"
+	"github.com/MamangRust/microservice-ecommerce-grpc-user/repository"
+	"github.com/MamangRust/microservice-ecommerce-pkg/hash"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
 )
 
 type Service struct {

@@ -8,9 +8,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	bannerhandler "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/handler/banner"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	bannerhandler "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/handler/banner"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/suite"
 )

@@ -6,10 +6,10 @@ import (
 	"errors"
 	"time"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	sharedErrors "github.com/MamangRust/monolith-ecommerce-shared/errors"
-	resettoken_errors "github.com/MamangRust/monolith-ecommerce-shared/errors/reset_token_errors"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	sharedErrors "github.com/MamangRust/microservice-ecommerce-shared/errors"
+	resettoken_errors "github.com/MamangRust/microservice-ecommerce-shared/errors/reset_token_errors"
 )
 
 

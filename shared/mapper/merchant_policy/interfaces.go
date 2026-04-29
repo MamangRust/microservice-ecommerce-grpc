@@ -1,8 +1,8 @@
 package merchantpolicyapimapper
 
 import (
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
 )
 
 type MerchantPolicyBaseResponseMapper interface {

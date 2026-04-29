@@ -29,7 +29,7 @@ const file_category_category_stats_proto_rawDesc = "" +
 	"\x16FindMonthlyTotalPrices\x12\x1c.pb.FindYearMonthTotalPrices\x1a(.pb.ApiResponseCategoryMonthlyTotalPrice\x12Y\n" +
 	"\x15FindYearlyTotalPrices\x12\x17.pb.FindYearTotalPrices\x1a'.pb.ApiResponseCategoryYearlyTotalPrice\x12I\n" +
 	"\x0eFindMonthPrice\x12\x14.pb.FindYearCategory\x1a!.pb.ApiResponseCategoryMonthPrice\x12G\n" +
-	"\rFindYearPrice\x12\x14.pb.FindYearCategory\x1a .pb.ApiResponseCategoryYearPriceB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindYearPrice\x12\x14.pb.FindYearCategory\x1a .pb.ApiResponseCategoryYearPriceB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var file_category_category_stats_proto_goTypes = []any{
 	(*FindYearMonthTotalPrices)(nil),             // 0: pb.FindYearMonthTotalPrices

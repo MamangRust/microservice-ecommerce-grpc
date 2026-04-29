@@ -1,6 +1,6 @@
 package shippingaddress_cache
 
-import "github.com/MamangRust/monolith-ecommerce-shared/cache"
+import "github.com/MamangRust/microservice-ecommerce-shared/cache"
 
 type ShippingAddressMencache interface {
 	QueryCache() ShippingAddressQueryCache

@@ -1,6 +1,6 @@
 package review_cache
 
-import "github.com/MamangRust/monolith-ecommerce-shared/cache"
+import "github.com/MamangRust/microservice-ecommerce-shared/cache"
 
 type ReviewMencache interface {
 	QueryCache() ReviewQueryCache

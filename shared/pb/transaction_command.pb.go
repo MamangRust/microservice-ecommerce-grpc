@@ -219,7 +219,7 @@ const file_transaction_transaction_command_proto_rawDesc = "" +
 	"\x1aDeleteTransactionPermanent\x12\x1e.pb.FindByIdTransactionRequest\x1a .pb.ApiResponseTransactionDelete\x12N\n" +
 	"\x15RestoreAllTransaction\x12\x16.google.protobuf.Empty\x1a\x1d.pb.ApiResponseTransactionAll\x12e\n" +
 	"!DeleteTransactionByOrderPermanent\x12\x1e.pb.FindByIdTransactionRequest\x1a .pb.ApiResponseTransactionDelete\x12V\n" +
-	"\x1dDeleteAllTransactionPermanent\x12\x16.google.protobuf.Empty\x1a\x1d.pb.ApiResponseTransactionAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x1dDeleteAllTransactionPermanent\x12\x16.google.protobuf.Empty\x1a\x1d.pb.ApiResponseTransactionAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_transaction_transaction_command_proto_rawDescOnce sync.Once

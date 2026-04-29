@@ -94,7 +94,7 @@ const file_banner_banner_query_proto_rawDesc = "" +
 	"\aFindAll\x12\x18.pb.FindAllBannerRequest\x1a\x1f.pb.ApiResponsePaginationBanner\x12<\n" +
 	"\bFindById\x12\x19.pb.FindByIdBannerRequest\x1a\x15.pb.ApiResponseBanner\x12Q\n" +
 	"\fFindByActive\x12\x18.pb.FindAllBannerRequest\x1a'.pb.ApiResponsePaginationBannerDeleteAt\x12R\n" +
-	"\rFindByTrashed\x12\x18.pb.FindAllBannerRequest\x1a'.pb.ApiResponsePaginationBannerDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x18.pb.FindAllBannerRequest\x1a'.pb.ApiResponsePaginationBannerDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_banner_banner_query_proto_rawDescOnce sync.Once

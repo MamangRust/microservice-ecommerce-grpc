@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"time"
-	shared_cache "github.com/MamangRust/monolith-ecommerce-shared/cache"
+	shared_cache "github.com/MamangRust/microservice-ecommerce-shared/cache"
 )
 
 const (

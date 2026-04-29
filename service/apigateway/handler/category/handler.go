@@ -1,13 +1,13 @@
 package categoryhandler
 
 import (
-	category_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/category"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-pkg/upload_image"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	"github.com/MamangRust/monolith-ecommerce-shared/errors"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/category"
+	category_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/category"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/upload_image"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/errors"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/category"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
 )

@@ -3,13 +3,13 @@ package service
 import (
 	"context"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-grpc-merchant/cache"
-	"github.com/MamangRust/monolith-ecommerce-grpc-merchant/repository"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	"github.com/MamangRust/monolith-ecommerce-shared/errorhandler"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-grpc-merchant/cache"
+	"github.com/MamangRust/microservice-ecommerce-grpc-merchant/repository"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	"github.com/MamangRust/microservice-ecommerce-shared/errorhandler"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
 	"go.opentelemetry.io/otel/attribute"
 	"go.uber.org/zap"
 )

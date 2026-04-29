@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/MamangRust/monolith-ecommerce-auth/repository"
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	"github.com/MamangRust/microservice-ecommerce-auth/repository"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/stretchr/testify/suite"
@@ -19,19 +19,19 @@ import (
 	"github.com/redis/go-redis/v9"
 	sdklog "go.opentelemetry.io/otel/sdk/log"
 
-	"github.com/MamangRust/monolith-ecommerce-pkg/hash"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
+	"github.com/MamangRust/microservice-ecommerce-pkg/hash"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
 
-	user_handler "github.com/MamangRust/monolith-ecommerce-grpc-user/handler"
-	user_service "github.com/MamangRust/monolith-ecommerce-grpc-user/service"
-	user_repo "github.com/MamangRust/monolith-ecommerce-grpc-user/repository"
-	role_handler "github.com/MamangRust/monolith-ecommerce-grpc-role/handler"
-	role_service "github.com/MamangRust/monolith-ecommerce-grpc-role/service"
-	role_repo "github.com/MamangRust/monolith-ecommerce-grpc-role/repository"
-	user_cache "github.com/MamangRust/monolith-ecommerce-grpc-user/cache"
-	role_cache "github.com/MamangRust/monolith-ecommerce-grpc-role/cache"
+	user_handler "github.com/MamangRust/microservice-ecommerce-grpc-user/handler"
+	user_service "github.com/MamangRust/microservice-ecommerce-grpc-user/service"
+	user_repo "github.com/MamangRust/microservice-ecommerce-grpc-user/repository"
+	role_handler "github.com/MamangRust/microservice-ecommerce-grpc-role/handler"
+	role_service "github.com/MamangRust/microservice-ecommerce-grpc-role/service"
+	role_repo "github.com/MamangRust/microservice-ecommerce-grpc-role/repository"
+	user_cache "github.com/MamangRust/microservice-ecommerce-grpc-user/cache"
+	role_cache "github.com/MamangRust/microservice-ecommerce-grpc-role/cache"
 )
 
 type AuthRepositoryTestSuite struct {

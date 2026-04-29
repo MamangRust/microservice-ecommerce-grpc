@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 

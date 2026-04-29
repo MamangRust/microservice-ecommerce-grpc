@@ -9,9 +9,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	reviewhandler "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/handler/review"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	reviewhandler "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/handler/review"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/suite"
 )

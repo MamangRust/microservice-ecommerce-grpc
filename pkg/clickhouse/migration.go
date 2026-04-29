@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	_ "github.com/ClickHouse/clickhouse-go/v2" // Import database/sql driver
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
 	"github.com/pressly/goose/v3"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"

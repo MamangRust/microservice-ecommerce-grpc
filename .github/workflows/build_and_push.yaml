@@ -15,7 +15,6 @@ jobs:
       matrix:
         service:
           - apigateway
-          - migrate
           - auth
           - user
           - role
@@ -36,6 +35,9 @@ jobs:
           - shipping_address
           - slider
           - transaction
+          - seeder
+          - stats-reader
+          - stats-writer
 
     steps:
       - name: Checkout
@@ -45,7 +47,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/mamangrust/monolith-ecommerce-grpc/${{ matrix.service }}
+          images: ghcr.io/mamangrust/microservice-ecommerce-grpc/${{ matrix.service }}
           tags: |
             type=ref,event=branch,name=main
             type=ref,event=tag
@@ -55,8 +57,8 @@ jobs:
           labels: |
             org.opencontainers.image.title=${{ matrix.service }}
             org.opencontainers.image.description=Microservice ${{ matrix.service }} for Payment Gateway
-            org.opencontainers.image.source=https://github.com/mamangrust/monolith-ecommerce-grpc
-            org.opencontainers.image.url=https://github.com/mamangrust/monolith-ecommerce-grpc
+            org.opencontainers.image.source=https://github.com/mamangrust/microservice-ecommerce-grpc
+            org.opencontainers.image.url=https://github.com/mamangrust/microservice-ecommerce-grpc
             org.opencontainers.image.licenses=MIT
 
       - name: Set up Docker Buildx
@@ -78,11 +80,11 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          context: ./service/${{ matrix.service }}
-          file: ./service/${{ matrix.service }}/Dockerfile
+          context: .
+          file: service/${{ matrix.service }}/Dockerfile
           tags: |
             ${{ steps.meta.outputs.tags }}
-            ghcr.io/mamangrust/monolith-ecommerce-grpc/${{ matrix.service }}:latest
+            ghcr.io/mamangrust/microservice-ecommerce-grpc/${{ matrix.service }}:latest
           labels: ${{ steps.meta.outputs.labels }}
 
 

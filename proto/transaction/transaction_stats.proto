@@ -4,7 +4,7 @@ package pb;
 
 import "transaction/transaction_common.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 service TransactionStatsService {
     rpc GetMonthlyAmountSuccess(MonthAmountTransactionRequest) returns (ApiResponseTransactionMonthAmountSuccess);

@@ -1,13 +1,13 @@
 package service
 
 import (
-	mencache "github.com/MamangRust/monolith-ecommerce-auth/cache"
-	"github.com/MamangRust/monolith-ecommerce-auth/repository"
-	"github.com/MamangRust/monolith-ecommerce-pkg/auth"
-	"github.com/MamangRust/monolith-ecommerce-pkg/hash"
-	"github.com/MamangRust/monolith-ecommerce-pkg/kafka"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
+	mencache "github.com/MamangRust/microservice-ecommerce-auth/cache"
+	"github.com/MamangRust/microservice-ecommerce-auth/repository"
+	"github.com/MamangRust/microservice-ecommerce-pkg/auth"
+	"github.com/MamangRust/microservice-ecommerce-pkg/hash"
+	"github.com/MamangRust/microservice-ecommerce-pkg/kafka"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
 )
 
 // Service aggregates authentication and identity-related services.

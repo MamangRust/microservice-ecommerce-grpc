@@ -896,7 +896,7 @@ const file_auth_auth_proto_rawDesc = "" +
 	"\fRegisterUser\x12\x13.pb.RegisterRequest\x1a\x17.pb.ApiResponseRegister\"\x00\x125\n" +
 	"\tLoginUser\x12\x10.pb.LoginRequest\x1a\x14.pb.ApiResponseLogin\"\x00\x12F\n" +
 	"\fRefreshToken\x12\x17.pb.RefreshTokenRequest\x1a\x1b.pb.ApiResponseRefreshToken\"\x00\x121\n" +
-	"\x05GetMe\x12\x10.pb.GetMeRequest\x1a\x14.pb.ApiResponseGetMe\"\x00B4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x05GetMe\x12\x10.pb.GetMeRequest\x1a\x14.pb.ApiResponseGetMe\"\x00B4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_auth_auth_proto_rawDescOnce sync.Once

@@ -1697,7 +1697,7 @@ const file_stats_stats_proto_rawDesc = "" +
 	",GetMonthlyTransactionMethodByMerchantSuccess\x12 .stats.GetStatsByMerchantRequest\x1a\x1c.stats.MonthlyMethodResponse\x12r\n" +
 	"+GetYearlyTransactionMethodByMerchantSuccess\x12&.stats.GetYearlyStatsByMerchantRequest\x1a\x1b.stats.YearlyMethodResponse\x12m\n" +
 	"+GetMonthlyTransactionMethodByMerchantFailed\x12 .stats.GetStatsByMerchantRequest\x1a\x1c.stats.MonthlyMethodResponse\x12q\n" +
-	"*GetYearlyTransactionMethodByMerchantFailed\x12&.stats.GetYearlyStatsByMerchantRequest\x1a\x1b.stats.YearlyMethodResponseB:Z8github.com/MamangRust/monolith-ecommerce-shared/pb/statsb\x06proto3"
+	"*GetYearlyTransactionMethodByMerchantFailed\x12&.stats.GetYearlyStatsByMerchantRequest\x1a\x1b.stats.YearlyMethodResponseB:Z8github.com/MamangRust/microservice-ecommerce-shared/pb/statsb\x06proto3"
 
 var (
 	file_stats_stats_proto_rawDescOnce sync.Once

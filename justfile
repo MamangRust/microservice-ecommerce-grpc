@@ -30,7 +30,7 @@ clean:
 
 # Generate Proto
 generate-proto:
-    protoc --proto_path=proto --go_out=shared/pb --go_opt=module=github.com/MamangRust/monolith-ecommerce-shared/pb --go-grpc_out=shared/pb --go-grpc_opt=module=github.com/MamangRust/monolith-ecommerce-shared/pb $(find proto -name "*.proto")
+    protoc --proto_path=proto --go_out=shared/pb --go_opt=module=github.com/MamangRust/microservice-ecommerce-shared/pb --go-grpc_out=shared/pb --go-grpc_opt=module=github.com/MamangRust/microservice-ecommerce-shared/pb $(find proto -name "*.proto")
 
 # Generate Swagger
 generate-swagger:

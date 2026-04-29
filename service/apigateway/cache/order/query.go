@@ -2,9 +2,9 @@ package order_cache
 
 import (
 	"context"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
 	"fmt"
 	"time"
 )

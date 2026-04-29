@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 	chDriver "github.com/ClickHouse/clickhouse-go/v2"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 )
 
 type clickhouseReaderRepository struct {

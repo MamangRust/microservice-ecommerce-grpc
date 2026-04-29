@@ -9,8 +9,8 @@ import (
 	"testing"
 	"encoding/json"
 
-	reviewdetailhandler "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/handler/review_detail"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	reviewdetailhandler "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/handler/review_detail"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/suite"
 )

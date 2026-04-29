@@ -1,10 +1,10 @@
-module github.com/MamangRust/monolith-ecommerce-grpc-email
+module github.com/MamangRust/microservice-ecommerce-grpc-email
 
 go 1.25.0
 
 require (
 	github.com/IBM/sarama v1.46.3
-	github.com/MamangRust/monolith-ecommerce-pkg v1.0.18
+	github.com/MamangRust/microservice-ecommerce-pkg v1.0.18
 	github.com/prometheus/client_golang v1.22.0
 	github.com/spf13/viper v1.21.0
 	go.opentelemetry.io/otel v1.43.0
@@ -71,3 +71,4 @@ require (
 	google.golang.org/grpc v1.80.0 // indirect
 	google.golang.org/protobuf v1.36.11 // indirect
 )
+replace github.com/MamangRust/microservice-ecommerce-pkg => ../../pkg

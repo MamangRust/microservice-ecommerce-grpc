@@ -3,7 +3,7 @@ package handler
 import (
 	"context"
 
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
 )
 
 type AuthHandleGrpc interface {

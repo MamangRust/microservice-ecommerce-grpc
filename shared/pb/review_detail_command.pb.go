@@ -180,7 +180,7 @@ const file_review_detail_review_detail_command_proto_rawDesc = "" +
 	"\x13RestoreReviewDetail\x12\x1f.pb.FindByIdReviewDetailRequest\x1a#.pb.ApiResponseReviewDetailDeleteAt\x12[\n" +
 	"\x1bDeleteReviewDetailPermanent\x12\x1f.pb.FindByIdReviewDetailRequest\x1a\x1b.pb.ApiResponseReviewDelete\x12J\n" +
 	"\x16RestoreAllReviewDetail\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseReviewAll\x12R\n" +
-	"\x1eDeleteAllReviewDetailPermanent\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseReviewAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x1eDeleteAllReviewDetailPermanent\x12\x16.google.protobuf.Empty\x1a\x18.pb.ApiResponseReviewAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_review_detail_review_detail_command_proto_rawDescOnce sync.Once

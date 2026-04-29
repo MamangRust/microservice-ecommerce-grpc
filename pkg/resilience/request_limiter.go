@@ -3,7 +3,7 @@ package resilience
 import (
 	"sync/atomic"
 
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
 	"go.uber.org/zap"
 	"golang.org/x/sync/semaphore"
 )

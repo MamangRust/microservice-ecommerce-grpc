@@ -3,9 +3,9 @@ package repository
 import (
 	"context"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	orderitem_errors "github.com/MamangRust/monolith-ecommerce-shared/errors/order_item_errors"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	orderitem_errors "github.com/MamangRust/microservice-ecommerce-shared/errors/order_item_errors"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 )
 
 type orderItemRepository struct {

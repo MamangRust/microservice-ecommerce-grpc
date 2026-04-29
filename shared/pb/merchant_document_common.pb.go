@@ -650,7 +650,7 @@ const file_merchant_document_merchant_document_common_proto_rawDesc = "" +
 	"\amessage\x18\x02 \x01(\tR\amessage\"R\n" +
 	"\x1eApiResponseMerchantDocumentAll\x12\x16\n" +
 	"\x06status\x18\x01 \x01(\tR\x06status\x12\x18\n" +
-	"\amessage\x18\x02 \x01(\tR\amessageB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\amessage\x18\x02 \x01(\tR\amessageB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_merchant_document_merchant_document_common_proto_rawDescOnce sync.Once

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/ClickHouse/clickhouse-go/v2"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 )

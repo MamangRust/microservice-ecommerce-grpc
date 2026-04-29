@@ -5,9 +5,9 @@ import (
 
 	"database/sql"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	review_errors "github.com/MamangRust/monolith-ecommerce-shared/errors/review"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	review_errors "github.com/MamangRust/microservice-ecommerce-shared/errors/review"
 )
 
 type reviewQueryRepository struct {

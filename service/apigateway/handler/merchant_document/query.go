@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/merchant_documents"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/merchant_documents"
 	"github.com/labstack/echo/v4"
 )
 

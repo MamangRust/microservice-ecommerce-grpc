@@ -1,6 +1,6 @@
 package auth_cache
 
-import "github.com/MamangRust/monolith-ecommerce-shared/cache"
+import "github.com/MamangRust/microservice-ecommerce-shared/cache"
 
 type authMencache struct {
 	IdentityCache

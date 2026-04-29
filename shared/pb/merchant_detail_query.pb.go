@@ -94,7 +94,7 @@ const file_merchant_detail_merchant_detail_query_proto_rawDesc = "" +
 	"\aFindAll\x12\x1a.pb.FindAllMerchantRequest\x1a'.pb.ApiResponsePaginationMerchantDetail\x12L\n" +
 	"\bFindById\x12!.pb.FindByIdMerchantDetailRequest\x1a\x1d.pb.ApiResponseMerchantDetail\x12[\n" +
 	"\fFindByActive\x12\x1a.pb.FindAllMerchantRequest\x1a/.pb.ApiResponsePaginationMerchantDetailDeleteAt\x12\\\n" +
-	"\rFindByTrashed\x12\x1a.pb.FindAllMerchantRequest\x1a/.pb.ApiResponsePaginationMerchantDetailDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x1a.pb.FindAllMerchantRequest\x1a/.pb.ApiResponsePaginationMerchantDetailDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_merchant_detail_merchant_detail_query_proto_rawDescOnce sync.Once

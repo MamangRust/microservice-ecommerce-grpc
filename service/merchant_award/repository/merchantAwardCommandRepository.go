@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"time"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	merchantaward_errors "github.com/MamangRust/monolith-ecommerce-shared/errors/merchant_award"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	merchantaward_errors "github.com/MamangRust/microservice-ecommerce-shared/errors/merchant_award"
 	"github.com/jackc/pgx/v5/pgtype"
 )
 

@@ -190,7 +190,7 @@ const file_category_category_command_proto_rawDesc = "" +
 	"\x0fRestoreCategory\x12\x1b.pb.FindByIdCategoryRequest\x1a\x1f.pb.ApiResponseCategoryDeleteAt\x12U\n" +
 	"\x17DeleteCategoryPermanent\x12\x1b.pb.FindByIdCategoryRequest\x1a\x1d.pb.ApiResponseCategoryDelete\x12H\n" +
 	"\x12RestoreAllCategory\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseCategoryAll\x12P\n" +
-	"\x1aDeleteAllCategoryPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseCategoryAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x1aDeleteAllCategoryPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseCategoryAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_category_category_command_proto_rawDescOnce sync.Once

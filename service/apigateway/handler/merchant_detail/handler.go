@@ -1,14 +1,14 @@
 package merchantdetailhandler
 
 import (
-	merchant_detail_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/merchant_detail"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-pkg/upload_image"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	sharedErrors "github.com/MamangRust/monolith-ecommerce-shared/errors"
-	merchantapimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/merchant"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/merchant_detail"
+	merchant_detail_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/merchant_detail"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/upload_image"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	sharedErrors "github.com/MamangRust/microservice-ecommerce-shared/errors"
+	merchantapimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/merchant"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/merchant_detail"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
 )

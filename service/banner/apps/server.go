@@ -1,13 +1,13 @@
 package apps
 
 import (
-	"github.com/MamangRust/monolith-ecommerce-grpc-banner/cache"
-	"github.com/MamangRust/monolith-ecommerce-grpc-banner/handler"
-	"github.com/MamangRust/monolith-ecommerce-grpc-banner/repository"
-	"github.com/MamangRust/monolith-ecommerce-grpc-banner/service"
-	"github.com/MamangRust/monolith-ecommerce-pkg/server"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-grpc-banner/cache"
+	"github.com/MamangRust/microservice-ecommerce-grpc-banner/handler"
+	"github.com/MamangRust/microservice-ecommerce-grpc-banner/repository"
+	"github.com/MamangRust/microservice-ecommerce-grpc-banner/service"
+	"github.com/MamangRust/microservice-ecommerce-pkg/server"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 	"google.golang.org/grpc"
 )
 

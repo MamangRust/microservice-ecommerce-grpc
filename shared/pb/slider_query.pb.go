@@ -94,7 +94,7 @@ const file_slider_slider_query_proto_rawDesc = "" +
 	"\aFindAll\x12\x18.pb.FindAllSliderRequest\x1a\x1f.pb.ApiResponsePaginationSlider\x12<\n" +
 	"\bFindById\x12\x19.pb.FindByIdSliderRequest\x1a\x15.pb.ApiResponseSlider\x12R\n" +
 	"\rFindByTrashed\x12\x18.pb.FindAllSliderRequest\x1a'.pb.ApiResponsePaginationSliderDeleteAt\x12Q\n" +
-	"\fFindByActive\x12\x18.pb.FindAllSliderRequest\x1a'.pb.ApiResponsePaginationSliderDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\fFindByActive\x12\x18.pb.FindAllSliderRequest\x1a'.pb.ApiResponsePaginationSliderDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_slider_slider_query_proto_rawDescOnce sync.Once

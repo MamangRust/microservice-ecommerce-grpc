@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package pb;
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message PaginationMeta{
   int32 current_page = 1;

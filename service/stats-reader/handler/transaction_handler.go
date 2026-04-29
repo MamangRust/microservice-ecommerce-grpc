@@ -2,9 +2,9 @@ package handler
 
 import (
 	"context"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-grpc/service/stats-reader/repository"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-grpc/service/stats-reader/repository"
 )
 
 type TransactionStatsHandler struct {

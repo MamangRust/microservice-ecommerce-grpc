@@ -1,7 +1,7 @@
 package errors
 
 import (
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 	"errors"
 	"fmt"
 	"net/http"

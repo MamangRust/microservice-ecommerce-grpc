@@ -4,11 +4,11 @@ import (
 	"net/http"
 	"strconv"
 
-	orderitem_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/order_item"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/order_item"
+	orderitem_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/order_item"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/order_item"
 	"github.com/labstack/echo/v4"
 )
 

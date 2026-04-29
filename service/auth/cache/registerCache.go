@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	sharedcachehelpers "github.com/MamangRust/monolith-ecommerce-shared/cache"
+	sharedcachehelpers "github.com/MamangRust/microservice-ecommerce-shared/cache"
 )
 
 // registerCache is a struct that implements the RegisterCache interface

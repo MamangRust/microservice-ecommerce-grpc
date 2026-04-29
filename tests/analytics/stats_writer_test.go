@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/MamangRust/monolith-ecommerce-grpc/service/stats-writer/usecase"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/events"
+	"github.com/MamangRust/microservice-ecommerce-grpc/service/stats-writer/usecase"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/events"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

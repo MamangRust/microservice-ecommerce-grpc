@@ -204,7 +204,7 @@ const file_cart_cart_command_proto_rawDesc = "" +
 	"\x12CartCommandService\x124\n" +
 	"\x06Create\x12\x15.pb.CreateCartRequest\x1a\x13.pb.ApiResponseCart\x12:\n" +
 	"\x06Delete\x12\x15.pb.DeleteCartRequest\x1a\x19.pb.ApiResponseCartDelete\x12=\n" +
-	"\tDeleteAll\x12\x18.pb.DeleteAllCartRequest\x1a\x16.pb.ApiResponseCartAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\tDeleteAll\x12\x18.pb.DeleteAllCartRequest\x1a\x16.pb.ApiResponseCartAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_cart_cart_command_proto_rawDescOnce sync.Once

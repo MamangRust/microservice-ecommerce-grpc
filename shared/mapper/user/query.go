@@ -1,9 +1,9 @@
 package userapimapper
 
 import (
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
-	paginationapimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/pagination"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
+	paginationapimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/pagination"
 )
 
 // userQueryResponseMapper provides methods to map gRPC user responses to HTTP API responses.

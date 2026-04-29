@@ -1,6 +1,6 @@
 package merchantpolicies_cache
 
-import "github.com/MamangRust/monolith-ecommerce-shared/cache"
+import "github.com/MamangRust/microservice-ecommerce-shared/cache"
 
 type merchantPoliciesMencache struct {
 	MerchantPolicyCommandCache

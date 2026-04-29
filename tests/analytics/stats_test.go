@@ -6,9 +6,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	categoryhandler "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/handler/category"
-	"github.com/MamangRust/monolith-ecommerce-shared/errors"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	categoryhandler "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/handler/category"
+	"github.com/MamangRust/microservice-ecommerce-shared/errors"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/suite"
 )

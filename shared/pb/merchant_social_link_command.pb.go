@@ -165,7 +165,7 @@ const file_merchant_social_link_merchant_social_link_command_proto_rawDesc = "" 
 	"\x03url\x18\x04 \x01(\tR\x03url2\xb2\x01\n" +
 	"\x1cMerchantSocialCommandService\x12H\n" +
 	"\x06Create\x12\x1f.pb.CreateMerchantSocialRequest\x1a\x1d.pb.ApiResponseMerchantSocial\x12H\n" +
-	"\x06Update\x12\x1f.pb.UpdateMerchantSocialRequest\x1a\x1d.pb.ApiResponseMerchantSocialB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x06Update\x12\x1f.pb.UpdateMerchantSocialRequest\x1a\x1d.pb.ApiResponseMerchantSocialB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_merchant_social_link_merchant_social_link_command_proto_rawDescOnce sync.Once

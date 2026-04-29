@@ -216,7 +216,7 @@ const file_transaction_transaction_query_proto_rawDesc = "" +
 	"\bFindById\x12\x1e.pb.FindByIdTransactionRequest\x1a\x1a.pb.ApiResponseTransaction\x12P\n" +
 	"\rFindByOrderId\x12#.pb.FindByOrderIdTransactionRequest\x1a\x1a.pb.ApiResponseTransaction\x12S\n" +
 	"\fFindByActive\x12\x1d.pb.FindAllTransactionRequest\x1a$.pb.ApiResponsePaginationTransaction\x12\\\n" +
-	"\rFindByTrashed\x12\x1d.pb.FindAllTransactionRequest\x1a,.pb.ApiResponsePaginationTransactionDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x1d.pb.FindAllTransactionRequest\x1a,.pb.ApiResponsePaginationTransactionDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_transaction_transaction_query_proto_rawDescOnce sync.Once

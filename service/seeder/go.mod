@@ -1,9 +1,9 @@
-module github.com/MamangRust/monolith-ecommerce-grpc-seeder
+module github.com/MamangRust/microservice-ecommerce-grpc-seeder
 
 go 1.25.0
 
 require (
-	github.com/MamangRust/monolith-ecommerce-pkg v1.0.18
+	github.com/MamangRust/microservice-ecommerce-pkg v1.0.18
 	github.com/spf13/viper v1.21.0
 	go.uber.org/zap v1.27.1
 )
@@ -44,3 +44,4 @@ require (
 	golang.org/x/sys v0.42.0 // indirect
 	golang.org/x/text v0.35.0 // indirect
 )
+replace github.com/MamangRust/microservice-ecommerce-pkg => ../../pkg

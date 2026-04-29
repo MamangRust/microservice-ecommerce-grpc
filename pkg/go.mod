@@ -1,10 +1,10 @@
-module github.com/MamangRust/monolith-ecommerce-pkg
+module github.com/MamangRust/microservice-ecommerce-pkg
 
 go 1.25.0
 
 require (
 	github.com/IBM/sarama v1.46.3
-	github.com/MamangRust/monolith-ecommerce-shared v1.0.20
+	github.com/MamangRust/microservice-ecommerce-shared v1.0.20
 	github.com/golang-jwt/jwt/v5 v5.2.2
 	github.com/google/uuid v1.6.0
 	github.com/gosimple/slug v1.15.0

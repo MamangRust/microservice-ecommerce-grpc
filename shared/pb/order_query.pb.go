@@ -168,7 +168,7 @@ const file_order_order_query_proto_rawDesc = "" +
 	"\aFindAll\x12\x17.pb.FindAllOrderRequest\x1a\x1e.pb.ApiResponsePaginationOrder\x12:\n" +
 	"\bFindById\x12\x18.pb.FindByIdOrderRequest\x1a\x14.pb.ApiResponseOrder\x12O\n" +
 	"\fFindByActive\x12\x17.pb.FindAllOrderRequest\x1a&.pb.ApiResponsePaginationOrderDeleteAt\x12P\n" +
-	"\rFindByTrashed\x12\x17.pb.FindAllOrderRequest\x1a&.pb.ApiResponsePaginationOrderDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x17.pb.FindAllOrderRequest\x1a&.pb.ApiResponsePaginationOrderDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_order_order_query_proto_rawDescOnce sync.Once

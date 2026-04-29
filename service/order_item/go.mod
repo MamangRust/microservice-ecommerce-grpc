@@ -1,10 +1,10 @@
-module github.com/MamangRust/monolith-ecommerce-grpc-order-item
+module github.com/MamangRust/microservice-ecommerce-grpc-order-item
 
 go 1.25.0
 
 require (
-	github.com/MamangRust/monolith-ecommerce-pkg v1.0.18
-	github.com/MamangRust/monolith-ecommerce-shared v1.0.20
+	github.com/MamangRust/microservice-ecommerce-pkg v1.0.18
+	github.com/MamangRust/microservice-ecommerce-shared v1.0.20
 	github.com/jackc/pgx/v5 v5.9.1
 	go.opentelemetry.io/otel v1.43.0
 	go.uber.org/zap v1.27.1
@@ -75,3 +75,5 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20260401024825-9d38bb4040a9 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260401024825-9d38bb4040a9 // indirect
 )
+replace github.com/MamangRust/microservice-ecommerce-pkg => ../../pkg
+replace github.com/MamangRust/microservice-ecommerce-shared => ../../shared

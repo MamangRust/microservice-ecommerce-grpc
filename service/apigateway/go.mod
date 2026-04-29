@@ -1,10 +1,10 @@
-module github.com/MamangRust/monolith-ecommerce-grpc-apigateway
+module github.com/MamangRust/microservice-ecommerce-grpc-apigateway
 
 go 1.25.0
 
 require (
-	github.com/MamangRust/monolith-ecommerce-pkg v1.0.18
-	github.com/MamangRust/monolith-ecommerce-shared v1.0.20
+	github.com/MamangRust/microservice-ecommerce-pkg v1.0.18
+	github.com/MamangRust/microservice-ecommerce-shared v1.0.20
 	github.com/golang-jwt/jwt/v5 v5.2.2
 	github.com/grafana/pyroscope-go v1.2.8
 	github.com/labstack/echo-jwt/v4 v4.3.1
@@ -103,3 +103,5 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260401024825-9d38bb4040a9 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
+replace github.com/MamangRust/microservice-ecommerce-pkg => ../../pkg
+replace github.com/MamangRust/microservice-ecommerce-shared => ../../shared

@@ -9,12 +9,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	order_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/order"
-	orderhandler "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/handler/order"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/order"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	order_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/order"
+	orderhandler "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/handler/order"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/order"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/suite"
 )

@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/events"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/events"
 )
 
 type Repository interface {

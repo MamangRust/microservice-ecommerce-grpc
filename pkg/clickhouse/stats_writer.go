@@ -7,8 +7,8 @@ import (
 
 	"github.com/ClickHouse/clickhouse-go/v2"
 	"github.com/IBM/sarama"
-	"github.com/MamangRust/monolith-ecommerce-pkg/kafka"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/kafka"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
 	"go.uber.org/zap"
 )
 

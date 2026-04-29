@@ -188,7 +188,7 @@ const file_role_role_query_proto_rawDesc = "" +
 	"\x0eFindByNameRole\x12\x19.pb.FindByNameRoleRequest\x1a\x13.pb.ApiResponseRole\x12M\n" +
 	"\fFindByActive\x12\x16.pb.FindAllRoleRequest\x1a%.pb.ApiResponsePaginationRoleDeleteAt\x12N\n" +
 	"\rFindByTrashed\x12\x16.pb.FindAllRoleRequest\x1a%.pb.ApiResponsePaginationRoleDeleteAt\x12A\n" +
-	"\fFindByUserId\x12\x1b.pb.FindByIdUserRoleRequest\x1a\x14.pb.ApiResponsesRoleB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\fFindByUserId\x12\x1b.pb.FindByIdUserRoleRequest\x1a\x14.pb.ApiResponsesRoleB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_role_role_query_proto_rawDescOnce sync.Once

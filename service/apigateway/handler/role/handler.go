@@ -1,16 +1,16 @@
 package rolehandler
 
 import (
-	api_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache"
-	role_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/role"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/kafka"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/errors"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/role"
+	api_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache"
+	role_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/role"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/kafka"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/errors"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/role"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
 )
 
 type DepsRole struct {

@@ -1,6 +1,6 @@
-# Distributed Modular Monolith — E-Commerce Platform
+# Distributed Modular microservice — E-Commerce Platform
 
-A production-grade, **modular-monolith e-commerce backend** built with **Go (Golang)**, designed around domain-driven service boundaries while retaining the operational simplicity of a single deployment unit. Each business domain — Users, Merchants, Products, Orders, Transactions, Reviews — lives in its own self-contained module with a clean internal architecture, yet all modules ship as independently deployable containers that communicate via **gRPC** and asynchronous **Kafka** events.
+A production-grade, **modular-microservice e-commerce backend** built with **Go (Golang)**, designed around domain-driven service boundaries while retaining the operational simplicity of a single deployment unit. Each business domain — Users, Merchants, Products, Orders, Transactions, Reviews — lives in its own self-contained module with a clean internal architecture, yet all modules ship as independently deployable containers that communicate via **gRPC** and asynchronous **Kafka** events.
 
 The platform ships with a **full observability stack** (Prometheus, Grafana, Loki, Jaeger, OpenTelemetry), **Redis caching** with instrumented metrics, **circuit-breaker & rate-limiting** resilience patterns, and first-class **Kubernetes** manifests featuring Horizontal Pod Autoscalers (HPA) for every service.
 
@@ -24,7 +24,7 @@ The platform ships with a **full observability stack** (Prometheus, Grafana, Lok
 
 ## Architecture Overview
 
-The platform follows a **Distributed Modular Monolith** architecture — each module is a self-contained Go binary with its own clean-architecture internals, deployed as an independent container. An **API Gateway** (NGINX + Echo) provides a unified REST entry point, translating HTTP requests into gRPC calls to downstream services.
+The platform follows a **Distributed Modular microservice** architecture — each module is a self-contained Go binary with its own clean-architecture internals, deployed as an independent container. An **API Gateway** (NGINX + Echo) provides a unified REST entry point, translating HTTP requests into gRPC calls to downstream services.
 
 ### Core Architecture Principles
 
@@ -650,8 +650,8 @@ Ensure the following tools are installed on your system:
 ### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/MamangRust/monolith-ecommerce-grpc.git
-cd monolith-ecommerce-grpc
+git clone https://github.com/MamangRust/microservice-ecommerce-grpc.git
+cd microservice-ecommerce-grpc
 ```
 
 ### 2. Configure Environment
@@ -737,7 +737,7 @@ The project provides both a `Makefile` and a `justfile` with equivalent commands
 ## Project Structure
 
 ```
-monolith-ecommerce-grpc/
+microservice-ecommerce-grpc/
 ├── proto/                          # Protobuf definitions (22 domains)
 ├── shared/                         # Shared Go module
 │   ├── pb/                         #   Generated protobuf Go code

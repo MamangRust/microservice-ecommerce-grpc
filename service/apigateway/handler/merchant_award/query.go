@@ -4,12 +4,12 @@ import (
 	"net/http"
 	"strconv"
 
-	merchantawards_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/merchant_awards"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/merchant_award"
-	sharedErrors "github.com/MamangRust/monolith-ecommerce-shared/errors"
+	merchantawards_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/merchant_awards"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/merchant_award"
+	sharedErrors "github.com/MamangRust/microservice-ecommerce-shared/errors"
 	"github.com/labstack/echo/v4"
 )
 

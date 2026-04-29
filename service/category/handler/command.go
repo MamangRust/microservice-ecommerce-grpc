@@ -3,11 +3,11 @@ package handler
 import (
 	"context"
 
-	"github.com/MamangRust/monolith-ecommerce-grpc-category/service"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	category_errors "github.com/MamangRust/monolith-ecommerce-shared/errors/category_errors"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-grpc-category/service"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	category_errors "github.com/MamangRust/microservice-ecommerce-shared/errors/category_errors"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 

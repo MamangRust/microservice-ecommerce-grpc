@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/MamangRust/monolith-ecommerce-grpc/service/stats-reader/handler"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-grpc/service/stats-reader/handler"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"go.uber.org/zap"

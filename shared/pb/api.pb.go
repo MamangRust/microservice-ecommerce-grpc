@@ -172,7 +172,7 @@ const file_common_api_proto_rawDesc = "" +
 	"\x06status\x18\x01 \x01(\tR\x06status\x12\x18\n" +
 	"\amessage\x18\x02 \x01(\tR\amessage\x12\x12\n" +
 	"\x04code\x18\x03 \x01(\x05R\x04code\x12\x12\n" +
-	"\x04type\x18\x04 \x01(\tR\x04typeB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x04type\x18\x04 \x01(\tR\x04typeB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_common_api_proto_rawDescOnce sync.Once

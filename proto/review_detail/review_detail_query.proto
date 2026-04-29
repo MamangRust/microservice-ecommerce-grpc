@@ -5,7 +5,7 @@ package pb;
 import "review_detail/review_detail_common.proto";
 import "review/review_query.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 service ReviewDetailQueryService {
     rpc FindAll(FindAllReviewRequest) returns (ApiResponsePaginationReviewDetails);

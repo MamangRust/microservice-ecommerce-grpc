@@ -1,14 +1,14 @@
 package bannerhandler
 
 import (
-	banner_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/banner"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/banner"
+	banner_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/banner"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/banner"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
 )
 
 type DepsBanner struct {

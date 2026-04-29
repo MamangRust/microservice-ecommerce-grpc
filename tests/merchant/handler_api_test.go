@@ -9,10 +9,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	merchanthandler "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/handler/merchant"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	"github.com/MamangRust/monolith-ecommerce-shared/errors"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	merchanthandler "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/handler/merchant"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	"github.com/MamangRust/microservice-ecommerce-shared/errors"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/suite"
 )

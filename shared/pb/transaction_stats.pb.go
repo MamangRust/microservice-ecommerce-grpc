@@ -33,7 +33,7 @@ const file_transaction_transaction_stats_proto_rawDesc = "" +
 	"\"GetMonthlyTransactionMethodSuccess\x12!.pb.MonthMethodTransactionRequest\x1a,.pb.ApiResponseTransactionMonthPaymentMethod\x12r\n" +
 	"!GetYearlyTransactionMethodSuccess\x12 .pb.YearMethodTransactionRequest\x1a+.pb.ApiResponseTransactionYearPaymentmethod\x12t\n" +
 	"!GetMonthlyTransactionMethodFailed\x12!.pb.MonthMethodTransactionRequest\x1a,.pb.ApiResponseTransactionMonthPaymentMethod\x12q\n" +
-	" GetYearlyTransactionMethodFailed\x12 .pb.YearMethodTransactionRequest\x1a+.pb.ApiResponseTransactionYearPaymentmethodB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	" GetYearlyTransactionMethodFailed\x12 .pb.YearMethodTransactionRequest\x1a+.pb.ApiResponseTransactionYearPaymentmethodB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var file_transaction_transaction_stats_proto_goTypes = []any{
 	(*MonthAmountTransactionRequest)(nil),            // 0: pb.MonthAmountTransactionRequest

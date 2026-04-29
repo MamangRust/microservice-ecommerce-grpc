@@ -1,10 +1,10 @@
 package merchantdocumenthandler
 
 import (
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-pkg/upload_image"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/merchant_documents"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/upload_image"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/merchant_documents"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
 )

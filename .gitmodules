@@ -1,8 +1,8 @@
 [submodule "pkg"]
 	path = pkg
-	url = https://github.com/MamangRust/monolith-ecommerce-pkg.git
+	url = https://github.com/MamangRust/microservice-ecommerce-pkg.git
 	branch = main
 [submodule "shared"]
 	path = shared
-	url = https://github.com/MamangRust/monolith-ecommerce-shared.git
+	url = https://github.com/MamangRust/microservice-ecommerce-shared.git
 	branch = main

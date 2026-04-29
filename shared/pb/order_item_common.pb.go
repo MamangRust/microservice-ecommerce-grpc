@@ -676,7 +676,7 @@ const file_order_item_order_item_common_proto_rawDesc = "" +
 	"pagination\x18\x04 \x01(\v2\x12.pb.PaginationMetaR\n" +
 	"pagination\"*\n" +
 	"\x18FindByIdOrderItemRequest\x12\x0e\n" +
-	"\x02id\x18\x01 \x01(\x05R\x02idB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x02id\x18\x01 \x01(\x05R\x02idB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_order_item_order_item_common_proto_rawDescOnce sync.Once

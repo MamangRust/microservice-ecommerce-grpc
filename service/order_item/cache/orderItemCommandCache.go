@@ -3,7 +3,7 @@ package cache
 import (
 	"context"
 
-	sharedcachehelpers "github.com/MamangRust/monolith-ecommerce-shared/cache"
+	sharedcachehelpers "github.com/MamangRust/microservice-ecommerce-shared/cache"
 )
 
 type orderItemCommandCache struct {

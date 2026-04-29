@@ -3,9 +3,9 @@ package tests
 import (
 	"context"
 
-	role_handler "github.com/MamangRust/monolith-ecommerce-grpc-role/handler"
-	user_handler "github.com/MamangRust/monolith-ecommerce-grpc-user/handler"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	role_handler "github.com/MamangRust/microservice-ecommerce-grpc-role/handler"
+	user_handler "github.com/MamangRust/microservice-ecommerce-grpc-user/handler"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"
 )

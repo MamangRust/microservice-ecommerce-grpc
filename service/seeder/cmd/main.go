@@ -3,12 +3,12 @@ package main
 import (
 	"context"
 
-	"github.com/MamangRust/monolith-ecommerce-pkg/database"
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-pkg/database/seeder"
-	"github.com/MamangRust/monolith-ecommerce-pkg/dotenv"
-	"github.com/MamangRust/monolith-ecommerce-pkg/hash"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/database"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-pkg/database/seeder"
+	"github.com/MamangRust/microservice-ecommerce-pkg/dotenv"
+	"github.com/MamangRust/microservice-ecommerce-pkg/hash"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 )

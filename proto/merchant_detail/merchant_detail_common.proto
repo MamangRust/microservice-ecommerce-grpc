@@ -5,7 +5,7 @@ package pb;
 import "google/protobuf/wrappers.proto";
 import "common/api.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message FindByIdMerchantDetailRequest {
     int32 id = 1;

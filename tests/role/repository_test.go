@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
-	"github.com/MamangRust/monolith-ecommerce-grpc-role/repository"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
+	"github.com/MamangRust/microservice-ecommerce-grpc-role/repository"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/stretchr/testify/suite"

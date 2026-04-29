@@ -2,7 +2,7 @@ package merchantawards_cache
 
 import (
 	"context"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
 	"fmt"
 )
 

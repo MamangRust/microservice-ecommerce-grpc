@@ -33,7 +33,7 @@ const file_transaction_transaction_stats_bymerchant_proto_rawDesc = "" +
 	",GetMonthlyTransactionMethodByMerchantSuccess\x12).pb.MonthMethodTransactionMerchantRequest\x1a,.pb.ApiResponseTransactionMonthPaymentMethod\x12\x84\x01\n" +
 	"+GetYearlyTransactionMethodByMerchantSuccess\x12(.pb.YearMethodTransactionMerchantRequest\x1a+.pb.ApiResponseTransactionYearPaymentmethod\x12\x86\x01\n" +
 	"+GetMonthlyTransactionMethodByMerchantFailed\x12).pb.MonthMethodTransactionMerchantRequest\x1a,.pb.ApiResponseTransactionMonthPaymentMethod\x12\x83\x01\n" +
-	"*GetYearlyTransactionMethodByMerchantFailed\x12(.pb.YearMethodTransactionMerchantRequest\x1a+.pb.ApiResponseTransactionYearPaymentmethodB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"*GetYearlyTransactionMethodByMerchantFailed\x12(.pb.YearMethodTransactionMerchantRequest\x1a+.pb.ApiResponseTransactionYearPaymentmethodB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var file_transaction_transaction_stats_bymerchant_proto_goTypes = []any{
 	(*MonthAmountTransactionMerchantRequest)(nil),    // 0: pb.MonthAmountTransactionMerchantRequest

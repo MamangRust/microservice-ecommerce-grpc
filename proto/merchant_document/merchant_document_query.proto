@@ -4,7 +4,7 @@ package pb;
 
 import "merchant_document/merchant_document_common.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message FindMerchantDocumentByIdRequest {
     int32 document_id = 1;

@@ -219,7 +219,7 @@ const file_merchant_detail_merchant_detail_command_proto_rawDesc = "" +
 	"\x15RestoreMerchantDetail\x12!.pb.FindByIdMerchantDetailRequest\x1a%.pb.ApiResponseMerchantDetailDeleteAt\x12a\n" +
 	"\x1dDeleteMerchantDetailPermanent\x12!.pb.FindByIdMerchantDetailRequest\x1a\x1d.pb.ApiResponseMerchantDelete\x12N\n" +
 	"\x18RestoreAllMerchantDetail\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseMerchantAll\x12V\n" +
-	" DeleteAllMerchantDetailPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseMerchantAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	" DeleteAllMerchantDetailPermanent\x12\x16.google.protobuf.Empty\x1a\x1a.pb.ApiResponseMerchantAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_merchant_detail_merchant_detail_command_proto_rawDescOnce sync.Once

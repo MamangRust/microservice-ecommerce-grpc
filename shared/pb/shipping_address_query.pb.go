@@ -168,7 +168,7 @@ const file_shipping_address_shipping_address_query_proto_rawDesc = "" +
 	"\bFindById\x12\x1b.pb.FindByIdShippingRequest\x1a\x17.pb.ApiResponseShipping\x12C\n" +
 	"\vFindByOrder\x12\x1b.pb.FindByIdShippingRequest\x1a\x17.pb.ApiResponseShipping\x12U\n" +
 	"\fFindByActive\x12\x1a.pb.FindAllShippingRequest\x1a).pb.ApiResponsePaginationShippingDeleteAt\x12V\n" +
-	"\rFindByTrashed\x12\x1a.pb.FindAllShippingRequest\x1a).pb.ApiResponsePaginationShippingDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x1a.pb.FindAllShippingRequest\x1a).pb.ApiResponsePaginationShippingDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_shipping_address_shipping_address_query_proto_rawDescOnce sync.Once

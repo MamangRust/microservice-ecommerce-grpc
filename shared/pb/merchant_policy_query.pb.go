@@ -29,7 +29,7 @@ const file_merchant_policy_merchant_policy_query_proto_rawDesc = "" +
 	"\aFindAll\x12\x1a.pb.FindAllMerchantRequest\x1a).pb.ApiResponsePaginationMerchantPolicies\x12P\n" +
 	"\bFindById\x12#.pb.FindByIdMerchantPoliciesRequest\x1a\x1f.pb.ApiResponseMerchantPolicies\x12]\n" +
 	"\fFindByActive\x12\x1a.pb.FindAllMerchantRequest\x1a1.pb.ApiResponsePaginationMerchantPoliciesDeleteAt\x12^\n" +
-	"\rFindByTrashed\x12\x1a.pb.FindAllMerchantRequest\x1a1.pb.ApiResponsePaginationMerchantPoliciesDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x1a.pb.FindAllMerchantRequest\x1a1.pb.ApiResponsePaginationMerchantPoliciesDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var file_merchant_policy_merchant_policy_query_proto_goTypes = []any{
 	(*FindAllMerchantRequest)(nil),                        // 0: pb.FindAllMerchantRequest

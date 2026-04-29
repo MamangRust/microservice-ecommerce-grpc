@@ -1,14 +1,14 @@
 package merchantbusinesshandler
 
 import (
-	merchantbusiness_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/merchant_business"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/merchant_business"
-	merchantapimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/merchant"
+	merchantbusiness_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/merchant_business"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/merchant_business"
+	merchantapimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/merchant"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
 )
 
 type DepsMerchantBusiness struct {

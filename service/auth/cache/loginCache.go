@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	sharedcachehelpers "github.com/MamangRust/monolith-ecommerce-shared/cache"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
+	sharedcachehelpers "github.com/MamangRust/microservice-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
 )
 
 var (

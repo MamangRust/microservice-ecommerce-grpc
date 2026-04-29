@@ -29,7 +29,7 @@ const file_review_detail_review_detail_query_proto_rawDesc = "" +
 	"\aFindAll\x12\x18.pb.FindAllReviewRequest\x1a&.pb.ApiResponsePaginationReviewDetails\x12H\n" +
 	"\bFindById\x12\x1f.pb.FindByIdReviewDetailRequest\x1a\x1b.pb.ApiResponseReviewDetail\x12X\n" +
 	"\fFindByActive\x12\x18.pb.FindAllReviewRequest\x1a..pb.ApiResponsePaginationReviewDetailsDeleteAt\x12Y\n" +
-	"\rFindByTrashed\x12\x18.pb.FindAllReviewRequest\x1a..pb.ApiResponsePaginationReviewDetailsDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x18.pb.FindAllReviewRequest\x1a..pb.ApiResponsePaginationReviewDetailsDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var file_review_detail_review_detail_query_proto_goTypes = []any{
 	(*FindAllReviewRequest)(nil),                       // 0: pb.FindAllReviewRequest

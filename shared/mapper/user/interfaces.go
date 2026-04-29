@@ -1,8 +1,8 @@
 package userapimapper
 
 import (
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
 )
 
 type UserBaseResponseMapper interface {

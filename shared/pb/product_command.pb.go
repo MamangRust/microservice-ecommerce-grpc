@@ -397,7 +397,7 @@ const file_product_product_command_proto_rawDesc = "" +
 	"\x0eRestoreProduct\x12\x1a.pb.FindByIdProductRequest\x1a\x1e.pb.ApiResponseProductDeleteAt\x12R\n" +
 	"\x16DeleteProductPermanent\x12\x1a.pb.FindByIdProductRequest\x1a\x1c.pb.ApiResponseProductDelete\x12F\n" +
 	"\x11RestoreAllProduct\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseProductAll\x12N\n" +
-	"\x19DeleteAllProductPermanent\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseProductAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x19DeleteAllProductPermanent\x12\x16.google.protobuf.Empty\x1a\x19.pb.ApiResponseProductAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_product_product_command_proto_rawDescOnce sync.Once

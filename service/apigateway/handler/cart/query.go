@@ -4,12 +4,12 @@ import (
 	"net/http"
 	"strconv"
 
-	cart_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/cart"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	sharedErrors "github.com/MamangRust/monolith-ecommerce-shared/errors"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/cart"
+	cart_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/cart"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	sharedErrors "github.com/MamangRust/microservice-ecommerce-shared/errors"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/cart"
 	"github.com/labstack/echo/v4"
 )
 

@@ -1,14 +1,14 @@
 package transactionhandler
 
 import (
-	transaction_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/transaction"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/transaction"
+	transaction_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/transaction"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/transaction"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	sharedErrors "github.com/MamangRust/monolith-ecommerce-shared/errors"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	sharedErrors "github.com/MamangRust/microservice-ecommerce-shared/errors"
 )
 
 type DepsTransaction struct {

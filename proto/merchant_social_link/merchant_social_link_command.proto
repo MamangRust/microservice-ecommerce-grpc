@@ -4,7 +4,7 @@ package pb;
 
 import "merchant_social_link/merchant_social_link_common.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message CreateMerchantSocialRequest {
     int32 merchant_detail_id = 1;

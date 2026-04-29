@@ -285,7 +285,7 @@ const file_order_item_order_item_command_proto_rawDesc = "" +
 	"\x14RestoreAllOrdersItem\x12\x16.google.protobuf.Empty\x1a\x1b.pb.ApiResponseOrderItemAll\x12S\n" +
 	"\x1cDeleteAllPermanentOrdersItem\x12\x16.google.protobuf.Empty\x1a\x1b.pb.ApiResponseOrderItemAll\x12_\n" +
 	"\x1fDeleteOrderItemByOrderPermanent\x12\x1c.pb.FindByIdOrderItemRequest\x1a\x1e.pb.ApiResponseOrderItemDelete\x12V\n" +
-	"\x13CalculateTotalPrice\x12\x1e.pb.CalculateTotalPriceRequest\x1a\x1f.pb.CalculateTotalPriceResponseB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x13CalculateTotalPrice\x12\x1e.pb.CalculateTotalPriceRequest\x1a\x1f.pb.CalculateTotalPriceResponseB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_order_item_order_item_command_proto_rawDescOnce sync.Once

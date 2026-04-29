@@ -1,14 +1,14 @@
 package reviewdetailhandler
 
 import (
-	reviewdetail_cache "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/cache/review_detail"
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-pkg/upload_image"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/review_detail"
-	reviewapimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/review"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
+	reviewdetail_cache "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/cache/review_detail"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-pkg/upload_image"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/review_detail"
+	reviewapimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/review"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
 )

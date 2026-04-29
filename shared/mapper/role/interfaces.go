@@ -1,8 +1,8 @@
 package roleapimapper
 
 import (
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
 )
 
 // RoleBaseResponseMapper defines a set of methods to map gRPC Role API responses

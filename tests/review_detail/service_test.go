@@ -4,14 +4,14 @@ import (
 	"context"
 	"testing"
 
-	detail_cache "github.com/MamangRust/monolith-ecommerce-grpc-review-detail/cache"
-	"github.com/MamangRust/monolith-ecommerce-grpc-review-detail/repository"
-	"github.com/MamangRust/monolith-ecommerce-grpc-review-detail/service"
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	detail_cache "github.com/MamangRust/microservice-ecommerce-grpc-review-detail/cache"
+	"github.com/MamangRust/microservice-ecommerce-grpc-review-detail/repository"
+	"github.com/MamangRust/microservice-ecommerce-grpc-review-detail/service"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 	"github.com/stretchr/testify/suite"
 )
 

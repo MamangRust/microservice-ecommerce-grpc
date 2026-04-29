@@ -146,7 +146,7 @@ const file_cart_cart_query_proto_rawDesc = "" +
 	"\x13FindByIdCartRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\x05R\x02id2T\n" +
 	"\x10CartQueryService\x12@\n" +
-	"\aFindAll\x12\x16.pb.FindAllCartRequest\x1a\x1d.pb.ApiResponsePaginationCartB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\aFindAll\x12\x16.pb.FindAllCartRequest\x1a\x1d.pb.ApiResponsePaginationCartB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_cart_cart_query_proto_rawDescOnce sync.Once

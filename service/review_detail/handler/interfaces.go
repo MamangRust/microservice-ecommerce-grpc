@@ -3,7 +3,7 @@ package handler
 import (
 	"context"
 
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 )
 
 type ReviewDetailQueryHandler interface {

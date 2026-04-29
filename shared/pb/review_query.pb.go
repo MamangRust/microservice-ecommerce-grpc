@@ -243,7 +243,7 @@ const file_review_review_query_proto_rawDesc = "" +
 	"\rFindByProduct\x12\x1f.pb.FindAllReviewProductRequest\x1a%.pb.ApiResponsePaginationReviewDetail\x12Y\n" +
 	"\x0eFindByMerchant\x12 .pb.FindAllReviewMerchantRequest\x1a%.pb.ApiResponsePaginationReviewDetail\x12R\n" +
 	"\rFindByTrashed\x12\x18.pb.FindAllReviewRequest\x1a'.pb.ApiResponsePaginationReviewDeleteAt\x12Q\n" +
-	"\fFindByActive\x12\x18.pb.FindAllReviewRequest\x1a'.pb.ApiResponsePaginationReviewDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\fFindByActive\x12\x18.pb.FindAllReviewRequest\x1a'.pb.ApiResponsePaginationReviewDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_review_review_query_proto_rawDescOnce sync.Once

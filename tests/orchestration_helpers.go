@@ -6,131 +6,131 @@ import (
 	"log"
 	"mime/multipart"
 
-	"github.com/MamangRust/monolith-ecommerce-pkg/auth"
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	"github.com/MamangRust/monolith-ecommerce-pkg/hash"
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/auth"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	"github.com/MamangRust/microservice-ecommerce-pkg/hash"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
 	// Role
-	role_cache "github.com/MamangRust/monolith-ecommerce-grpc-role/cache"
-	role_handler "github.com/MamangRust/monolith-ecommerce-grpc-role/handler"
-	role_repo "github.com/MamangRust/monolith-ecommerce-grpc-role/repository"
-	role_service "github.com/MamangRust/monolith-ecommerce-grpc-role/service"
+	role_cache "github.com/MamangRust/microservice-ecommerce-grpc-role/cache"
+	role_handler "github.com/MamangRust/microservice-ecommerce-grpc-role/handler"
+	role_repo "github.com/MamangRust/microservice-ecommerce-grpc-role/repository"
+	role_service "github.com/MamangRust/microservice-ecommerce-grpc-role/service"
 
 	// User
-	user_cache "github.com/MamangRust/monolith-ecommerce-grpc-user/cache"
-	user_handler "github.com/MamangRust/monolith-ecommerce-grpc-user/handler"
-	user_repo "github.com/MamangRust/monolith-ecommerce-grpc-user/repository"
-	user_service "github.com/MamangRust/monolith-ecommerce-grpc-user/service"
+	user_cache "github.com/MamangRust/microservice-ecommerce-grpc-user/cache"
+	user_handler "github.com/MamangRust/microservice-ecommerce-grpc-user/handler"
+	user_repo "github.com/MamangRust/microservice-ecommerce-grpc-user/repository"
+	user_service "github.com/MamangRust/microservice-ecommerce-grpc-user/service"
 
 	// Auth
-	auth_cache "github.com/MamangRust/monolith-ecommerce-auth/cache"
-	auth_handler "github.com/MamangRust/monolith-ecommerce-auth/handler"
-	auth_repo "github.com/MamangRust/monolith-ecommerce-auth/repository"
-	auth_service "github.com/MamangRust/monolith-ecommerce-auth/service"
+	auth_cache "github.com/MamangRust/microservice-ecommerce-auth/cache"
+	auth_handler "github.com/MamangRust/microservice-ecommerce-auth/handler"
+	auth_repo "github.com/MamangRust/microservice-ecommerce-auth/repository"
+	auth_service "github.com/MamangRust/microservice-ecommerce-auth/service"
 
 	// Banner
-	banner_cache "github.com/MamangRust/monolith-ecommerce-grpc-banner/cache"
-	banner_handler "github.com/MamangRust/monolith-ecommerce-grpc-banner/handler"
-	banner_repo "github.com/MamangRust/monolith-ecommerce-grpc-banner/repository"
-	banner_service "github.com/MamangRust/monolith-ecommerce-grpc-banner/service"
+	banner_cache "github.com/MamangRust/microservice-ecommerce-grpc-banner/cache"
+	banner_handler "github.com/MamangRust/microservice-ecommerce-grpc-banner/handler"
+	banner_repo "github.com/MamangRust/microservice-ecommerce-grpc-banner/repository"
+	banner_service "github.com/MamangRust/microservice-ecommerce-grpc-banner/service"
 
 	// Slider
-	slider_cache "github.com/MamangRust/monolith-ecommerce-grpc-slider/cache"
-	slider_handler "github.com/MamangRust/monolith-ecommerce-grpc-slider/handler"
-	slider_repo "github.com/MamangRust/monolith-ecommerce-grpc-slider/repository"
-	slider_service "github.com/MamangRust/monolith-ecommerce-grpc-slider/service"
+	slider_cache "github.com/MamangRust/microservice-ecommerce-grpc-slider/cache"
+	slider_handler "github.com/MamangRust/microservice-ecommerce-grpc-slider/handler"
+	slider_repo "github.com/MamangRust/microservice-ecommerce-grpc-slider/repository"
+	slider_service "github.com/MamangRust/microservice-ecommerce-grpc-slider/service"
 
 	// Category
-	category_cache "github.com/MamangRust/monolith-ecommerce-grpc-category/cache"
-	category_handler "github.com/MamangRust/monolith-ecommerce-grpc-category/handler"
-	category_repo "github.com/MamangRust/monolith-ecommerce-grpc-category/repository"
-	category_service "github.com/MamangRust/monolith-ecommerce-grpc-category/service"
+	category_cache "github.com/MamangRust/microservice-ecommerce-grpc-category/cache"
+	category_handler "github.com/MamangRust/microservice-ecommerce-grpc-category/handler"
+	category_repo "github.com/MamangRust/microservice-ecommerce-grpc-category/repository"
+	category_service "github.com/MamangRust/microservice-ecommerce-grpc-category/service"
 
 	// Product
-	product_cache "github.com/MamangRust/monolith-ecommerce-grpc-product/cache"
-	product_handler "github.com/MamangRust/monolith-ecommerce-grpc-product/handler"
-	product_repo "github.com/MamangRust/monolith-ecommerce-grpc-product/repository"
-	product_service "github.com/MamangRust/monolith-ecommerce-grpc-product/service"
+	product_cache "github.com/MamangRust/microservice-ecommerce-grpc-product/cache"
+	product_handler "github.com/MamangRust/microservice-ecommerce-grpc-product/handler"
+	product_repo "github.com/MamangRust/microservice-ecommerce-grpc-product/repository"
+	product_service "github.com/MamangRust/microservice-ecommerce-grpc-product/service"
 
 	// Cart
-	cart_cache "github.com/MamangRust/monolith-ecommerce-grpc-cart/cache"
-	cart_handler "github.com/MamangRust/monolith-ecommerce-grpc-cart/handler"
-	cart_repo "github.com/MamangRust/monolith-ecommerce-grpc-cart/repository"
-	cart_service "github.com/MamangRust/monolith-ecommerce-grpc-cart/service"
+	cart_cache "github.com/MamangRust/microservice-ecommerce-grpc-cart/cache"
+	cart_handler "github.com/MamangRust/microservice-ecommerce-grpc-cart/handler"
+	cart_repo "github.com/MamangRust/microservice-ecommerce-grpc-cart/repository"
+	cart_service "github.com/MamangRust/microservice-ecommerce-grpc-cart/service"
 
 	// Merchant
-	merchant_cache "github.com/MamangRust/monolith-ecommerce-grpc-merchant/cache"
-	merchant_handler "github.com/MamangRust/monolith-ecommerce-grpc-merchant/handler"
-	merchant_repo "github.com/MamangRust/monolith-ecommerce-grpc-merchant/repository"
-	merchant_service "github.com/MamangRust/monolith-ecommerce-grpc-merchant/service"
+	merchant_cache "github.com/MamangRust/microservice-ecommerce-grpc-merchant/cache"
+	merchant_handler "github.com/MamangRust/microservice-ecommerce-grpc-merchant/handler"
+	merchant_repo "github.com/MamangRust/microservice-ecommerce-grpc-merchant/repository"
+	merchant_service "github.com/MamangRust/microservice-ecommerce-grpc-merchant/service"
 
 	// Order
-	order_cache "github.com/MamangRust/monolith-ecommerce-grpc-order/cache"
-	order_handler "github.com/MamangRust/monolith-ecommerce-grpc-order/handler"
-	order_repo "github.com/MamangRust/monolith-ecommerce-grpc-order/repository"
-	order_service "github.com/MamangRust/monolith-ecommerce-grpc-order/service"
+	order_cache "github.com/MamangRust/microservice-ecommerce-grpc-order/cache"
+	order_handler "github.com/MamangRust/microservice-ecommerce-grpc-order/handler"
+	order_repo "github.com/MamangRust/microservice-ecommerce-grpc-order/repository"
+	order_service "github.com/MamangRust/microservice-ecommerce-grpc-order/service"
 
 	// Merchant Award
-	merchant_award_cache "github.com/MamangRust/monolith-ecommerce-grpc-merchant_award/cache"
-	merchant_award_handler "github.com/MamangRust/monolith-ecommerce-grpc-merchant_award/handler"
-	merchant_award_repo "github.com/MamangRust/monolith-ecommerce-grpc-merchant_award/repository"
-	merchant_award_service "github.com/MamangRust/monolith-ecommerce-grpc-merchant_award/service"
+	merchant_award_cache "github.com/MamangRust/microservice-ecommerce-grpc-merchant_award/cache"
+	merchant_award_handler "github.com/MamangRust/microservice-ecommerce-grpc-merchant_award/handler"
+	merchant_award_repo "github.com/MamangRust/microservice-ecommerce-grpc-merchant_award/repository"
+	merchant_award_service "github.com/MamangRust/microservice-ecommerce-grpc-merchant_award/service"
 
 	// Merchant Business
-	merchant_business_cache "github.com/MamangRust/monolith-ecommerce-grpc-merchant_business/cache"
-	merchant_business_handler "github.com/MamangRust/monolith-ecommerce-grpc-merchant_business/handler"
-	merchant_business_repo "github.com/MamangRust/monolith-ecommerce-grpc-merchant_business/repository"
-	merchant_business_service "github.com/MamangRust/monolith-ecommerce-grpc-merchant_business/service"
+	merchant_business_cache "github.com/MamangRust/microservice-ecommerce-grpc-merchant_business/cache"
+	merchant_business_handler "github.com/MamangRust/microservice-ecommerce-grpc-merchant_business/handler"
+	merchant_business_repo "github.com/MamangRust/microservice-ecommerce-grpc-merchant_business/repository"
+	merchant_business_service "github.com/MamangRust/microservice-ecommerce-grpc-merchant_business/service"
 
 	// Transaction
-	transaction_cache "github.com/MamangRust/monolith-ecommerce-grpc-transaction/cache"
-	transaction_handler "github.com/MamangRust/monolith-ecommerce-grpc-transaction/handler"
-	transaction_repo "github.com/MamangRust/monolith-ecommerce-grpc-transaction/repository"
-	transaction_service "github.com/MamangRust/monolith-ecommerce-grpc-transaction/service"
+	transaction_cache "github.com/MamangRust/microservice-ecommerce-grpc-transaction/cache"
+	transaction_handler "github.com/MamangRust/microservice-ecommerce-grpc-transaction/handler"
+	transaction_repo "github.com/MamangRust/microservice-ecommerce-grpc-transaction/repository"
+	transaction_service "github.com/MamangRust/microservice-ecommerce-grpc-transaction/service"
 
 	// Merchant Detail
-	merchant_detail_cache "github.com/MamangRust/monolith-ecommerce-grpc-merchant_detail/cache"
-	merchant_detail_handler "github.com/MamangRust/monolith-ecommerce-grpc-merchant_detail/handler"
-	merchant_detail_repo "github.com/MamangRust/monolith-ecommerce-grpc-merchant_detail/repository"
-	merchant_detail_service "github.com/MamangRust/monolith-ecommerce-grpc-merchant_detail/service"
+	merchant_detail_cache "github.com/MamangRust/microservice-ecommerce-grpc-merchant_detail/cache"
+	merchant_detail_handler "github.com/MamangRust/microservice-ecommerce-grpc-merchant_detail/handler"
+	merchant_detail_repo "github.com/MamangRust/microservice-ecommerce-grpc-merchant_detail/repository"
+	merchant_detail_service "github.com/MamangRust/microservice-ecommerce-grpc-merchant_detail/service"
 
 	// Merchant Policy
-	merchant_policy_cache "github.com/MamangRust/monolith-ecommerce-grpc-merchant_policy/cache"
-	merchant_policy_handler "github.com/MamangRust/monolith-ecommerce-grpc-merchant_policy/handler"
-	merchant_policy_repo "github.com/MamangRust/monolith-ecommerce-grpc-merchant_policy/repository"
-	merchant_policy_service "github.com/MamangRust/monolith-ecommerce-grpc-merchant_policy/service"
+	merchant_policy_cache "github.com/MamangRust/microservice-ecommerce-grpc-merchant_policy/cache"
+	merchant_policy_handler "github.com/MamangRust/microservice-ecommerce-grpc-merchant_policy/handler"
+	merchant_policy_repo "github.com/MamangRust/microservice-ecommerce-grpc-merchant_policy/repository"
+	merchant_policy_service "github.com/MamangRust/microservice-ecommerce-grpc-merchant_policy/service"
 
 	// Shipping Address
-	shipping_address_cache "github.com/MamangRust/monolith-ecommerce-grpc-shipping-address/cache"
-	shipping_address_handler "github.com/MamangRust/monolith-ecommerce-grpc-shipping-address/handler"
-	shipping_address_repo "github.com/MamangRust/monolith-ecommerce-grpc-shipping-address/repository"
-	shipping_address_service "github.com/MamangRust/monolith-ecommerce-grpc-shipping-address/service"
+	shipping_address_cache "github.com/MamangRust/microservice-ecommerce-grpc-shipping-address/cache"
+	shipping_address_handler "github.com/MamangRust/microservice-ecommerce-grpc-shipping-address/handler"
+	shipping_address_repo "github.com/MamangRust/microservice-ecommerce-grpc-shipping-address/repository"
+	shipping_address_service "github.com/MamangRust/microservice-ecommerce-grpc-shipping-address/service"
 
 	// Order Item
-	order_item_cache "github.com/MamangRust/monolith-ecommerce-grpc-order-item/cache"
-	order_item_handler "github.com/MamangRust/monolith-ecommerce-grpc-order-item/handler"
-	order_item_repo "github.com/MamangRust/monolith-ecommerce-grpc-order-item/repository"
-	order_item_service "github.com/MamangRust/monolith-ecommerce-grpc-order-item/service"
+	order_item_cache "github.com/MamangRust/microservice-ecommerce-grpc-order-item/cache"
+	order_item_handler "github.com/MamangRust/microservice-ecommerce-grpc-order-item/handler"
+	order_item_repo "github.com/MamangRust/microservice-ecommerce-grpc-order-item/repository"
+	order_item_service "github.com/MamangRust/microservice-ecommerce-grpc-order-item/service"
 
 	// Review
-	review_cache "github.com/MamangRust/monolith-ecommerce-grpc-review/cache"
-	review_handler "github.com/MamangRust/monolith-ecommerce-grpc-review/handler"
-	review_repo "github.com/MamangRust/monolith-ecommerce-grpc-review/repository"
-	review_service "github.com/MamangRust/monolith-ecommerce-grpc-review/service"
+	review_cache "github.com/MamangRust/microservice-ecommerce-grpc-review/cache"
+	review_handler "github.com/MamangRust/microservice-ecommerce-grpc-review/handler"
+	review_repo "github.com/MamangRust/microservice-ecommerce-grpc-review/repository"
+	review_service "github.com/MamangRust/microservice-ecommerce-grpc-review/service"
 
 	// Review Detail
-	review_detail_cache "github.com/MamangRust/monolith-ecommerce-grpc-review-detail/cache"
-	review_detail_handler "github.com/MamangRust/monolith-ecommerce-grpc-review-detail/handler"
-	review_detail_repo "github.com/MamangRust/monolith-ecommerce-grpc-review-detail/repository"
-	review_detail_service "github.com/MamangRust/monolith-ecommerce-grpc-review-detail/service"
+	review_detail_cache "github.com/MamangRust/microservice-ecommerce-grpc-review-detail/cache"
+	review_detail_handler "github.com/MamangRust/microservice-ecommerce-grpc-review-detail/handler"
+	review_detail_repo "github.com/MamangRust/microservice-ecommerce-grpc-review-detail/repository"
+	review_detail_service "github.com/MamangRust/microservice-ecommerce-grpc-review-detail/service"
 
 	// Stats Reader
-	stats_reader_handler "github.com/MamangRust/monolith-ecommerce-grpc/service/stats-reader/handler"
+	stats_reader_handler "github.com/MamangRust/microservice-ecommerce-grpc/service/stats-reader/handler"
 )
 
 func (s *BaseTestSuite) SetupRoleService() {

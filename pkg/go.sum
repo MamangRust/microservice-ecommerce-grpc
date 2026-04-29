@@ -4,8 +4,8 @@ github.com/ClickHouse/clickhouse-go/v2 v2.34.0 h1:Y4rqkdrRHgExvC4o/NTbLdY5LFQ3LH
 github.com/ClickHouse/clickhouse-go/v2 v2.34.0/go.mod h1:yioSINoRLVZkLyDzdMXPLRIqhDvel8iLBlwh6Iefso8=
 github.com/IBM/sarama v1.46.3 h1:njRsX6jNlnR+ClJ8XmkO+CM4unbrNr/2vB5KK6UA+IE=
 github.com/IBM/sarama v1.46.3/go.mod h1:GTUYiF9DMOZVe3FwyGT+dtSPceGFIgA+sPc5u6CBwko=
-github.com/MamangRust/monolith-ecommerce-shared v1.0.20 h1:BjYDk+QCx52gFbfdZXK4DYqb1S8B5xmI9BeeAUGq8P4=
-github.com/MamangRust/monolith-ecommerce-shared v1.0.20/go.mod h1:+FrcpGJOyi5ym/qPL9yZijL36m3BKWRFgZUpU8JGl/U=
+github.com/MamangRust/microservice-ecommerce-shared v1.0.20 h1:BjYDk+QCx52gFbfdZXK4DYqb1S8B5xmI9BeeAUGq8P4=
+github.com/MamangRust/microservice-ecommerce-shared v1.0.20/go.mod h1:+FrcpGJOyi5ym/qPL9yZijL36m3BKWRFgZUpU8JGl/U=
 github.com/andybalholm/brotli v1.1.1 h1:PR2pgnyFznKEugtsUo0xLdDop5SKXd5Qf5ysW+7XdTA=
 github.com/andybalholm/brotli v1.1.1/go.mod h1:05ib4cKhjx3OQYUY22hTVd34Bc8upXjOLL2rKwwZBoA=
 github.com/bsm/ginkgo/v2 v2.12.0 h1:Ny8MWAHyOepLGlLKYmXG4IEkioBysk6GpaRTLC8zwWs=

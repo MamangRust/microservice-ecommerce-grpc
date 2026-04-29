@@ -5,8 +5,8 @@ import (
 	"time"
 
 	chDriver "github.com/ClickHouse/clickhouse-go/v2"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/events"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/events"
 )
 
 type clickhouseRepository struct {

@@ -1,14 +1,14 @@
 package apps
 
 import (
-	"github.com/MamangRust/monolith-ecommerce-grpc-category/cache"
-	"github.com/MamangRust/monolith-ecommerce-grpc-category/handler"
-	"github.com/MamangRust/monolith-ecommerce-grpc-category/repository"
-	"github.com/MamangRust/monolith-ecommerce-grpc-category/service"
-	"github.com/MamangRust/monolith-ecommerce-pkg/kafka"
-	"github.com/MamangRust/monolith-ecommerce-pkg/server"
-	"github.com/MamangRust/monolith-ecommerce-shared/observability"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-grpc-category/cache"
+	"github.com/MamangRust/microservice-ecommerce-grpc-category/handler"
+	"github.com/MamangRust/microservice-ecommerce-grpc-category/repository"
+	"github.com/MamangRust/microservice-ecommerce-grpc-category/service"
+	"github.com/MamangRust/microservice-ecommerce-pkg/kafka"
+	"github.com/MamangRust/microservice-ecommerce-pkg/server"
+	"github.com/MamangRust/microservice-ecommerce-shared/observability"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 	"github.com/spf13/viper"
 	"google.golang.org/grpc"
 )

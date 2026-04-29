@@ -2,8 +2,8 @@ package usecase
 
 import (
 	"context"
-	"github.com/MamangRust/monolith-ecommerce-grpc/service/stats-writer/repository"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/events"
+	"github.com/MamangRust/microservice-ecommerce-grpc/service/stats-writer/repository"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/events"
 )
 
 type UseCase interface {

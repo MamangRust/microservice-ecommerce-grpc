@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 
 	"github.com/IBM/sarama"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-grpc/service/stats-writer/usecase"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/events"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-grpc/service/stats-writer/usecase"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/events"
 	"go.uber.org/zap"
 )
 

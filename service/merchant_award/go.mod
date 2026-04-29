@@ -1,10 +1,10 @@
-module github.com/MamangRust/monolith-ecommerce-grpc-merchant_award
+module github.com/MamangRust/microservice-ecommerce-grpc-merchant_award
 
 go 1.25.0
 
 require (
-	github.com/MamangRust/monolith-ecommerce-pkg v1.0.18
-	github.com/MamangRust/monolith-ecommerce-shared v1.0.20
+	github.com/MamangRust/microservice-ecommerce-pkg v1.0.18
+	github.com/MamangRust/microservice-ecommerce-shared v1.0.20
 	github.com/jackc/pgx/v5 v5.9.1
 	github.com/spf13/viper v1.21.0
 	go.opentelemetry.io/otel v1.43.0
@@ -75,3 +75,5 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20260401024825-9d38bb4040a9 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260401024825-9d38bb4040a9 // indirect
 )
+replace github.com/MamangRust/microservice-ecommerce-pkg => ../../pkg
+replace github.com/MamangRust/microservice-ecommerce-shared => ../../shared

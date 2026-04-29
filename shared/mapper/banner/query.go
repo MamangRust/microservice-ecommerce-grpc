@@ -1,9 +1,9 @@
 package bannerapimapper
 
 import (
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
-	paginationapimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/pagination"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
+	paginationapimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/pagination"
 )
 
 type bannerQueryResponseMapper struct{}

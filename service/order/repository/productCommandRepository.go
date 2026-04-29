@@ -3,9 +3,9 @@ package repository
 import (
 	"context"
 
-	db "github.com/MamangRust/monolith-ecommerce-pkg/database/schema"
-	product_errors "github.com/MamangRust/monolith-ecommerce-shared/errors/product_errors"
-	"github.com/MamangRust/monolith-ecommerce-shared/pb"
+	db "github.com/MamangRust/microservice-ecommerce-pkg/database/schema"
+	product_errors "github.com/MamangRust/microservice-ecommerce-shared/errors/product_errors"
+	"github.com/MamangRust/microservice-ecommerce-shared/pb"
 )
 
 type productCommandRepository struct {

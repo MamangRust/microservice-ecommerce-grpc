@@ -96,7 +96,7 @@ const file_user_user_query_proto_rawDesc = "" +
 	"\vFindByEmail\x12\x16.pb.FindByEmailRequest\x1a\x1f.pb.ApiResponseUserWithPassword\x12P\n" +
 	"\x16FindByVerificationCode\x12!.pb.FindByVerificationCodeRequest\x1a\x13.pb.ApiResponseUser\x12M\n" +
 	"\fFindByActive\x12\x16.pb.FindAllUserRequest\x1a%.pb.ApiResponsePaginationUserDeleteAt\x12N\n" +
-	"\rFindByTrashed\x12\x16.pb.FindAllUserRequest\x1a%.pb.ApiResponsePaginationUserDeleteAtB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\rFindByTrashed\x12\x16.pb.FindAllUserRequest\x1a%.pb.ApiResponsePaginationUserDeleteAtB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_user_user_query_proto_rawDescOnce sync.Once

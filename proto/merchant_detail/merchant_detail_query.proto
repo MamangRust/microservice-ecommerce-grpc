@@ -6,7 +6,7 @@ import "merchant_detail/merchant_detail_common.proto";
 
 import "merchant/merchant_query.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message FindAllMerchantDetailRequest {
     int32 page = 1;

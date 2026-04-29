@@ -1811,7 +1811,7 @@ const file_category_category_common_proto_rawDesc = "" +
 	"\x1cFindYearTotalPriceByMerchant\x12\x12\n" +
 	"\x04year\x18\x01 \x01(\x05R\x04year\x12\x1f\n" +
 	"\vmerchant_id\x18\x02 \x01(\x05R\n" +
-	"merchantIdB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"merchantIdB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_category_category_common_proto_rawDescOnce sync.Once

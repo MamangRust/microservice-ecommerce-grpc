@@ -5,7 +5,7 @@ package pb;
 import "review/review_common.proto";
 import "google/protobuf/empty.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message CreateReviewRequest {
     int32 user_id = 1;

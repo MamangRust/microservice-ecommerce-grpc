@@ -8,8 +8,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	shippingaddresshandler "github.com/MamangRust/monolith-ecommerce-grpc-apigateway/handler/shipping_address"
-	tests "github.com/MamangRust/monolith-ecommerce-test"
+	shippingaddresshandler "github.com/MamangRust/microservice-ecommerce-grpc-apigateway/handler/shipping_address"
+	tests "github.com/MamangRust/microservice-ecommerce-test"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/suite"
 )

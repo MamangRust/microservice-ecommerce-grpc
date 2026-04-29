@@ -5,7 +5,7 @@ package pb;
 import "google/protobuf/empty.proto";
 import "user/user_common.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message CreateUserRequest {
     string firstname = 1;

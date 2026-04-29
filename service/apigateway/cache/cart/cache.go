@@ -1,6 +1,6 @@
 package cart_cache
 
-import "github.com/MamangRust/monolith-ecommerce-shared/cache"
+import "github.com/MamangRust/microservice-ecommerce-shared/cache"
 
 type cartMencache struct {
 	CartQueryCache

@@ -3,7 +3,7 @@ package middleware
 import (
 	"context"
 
-	"github.com/MamangRust/monolith-ecommerce-pkg/resilience"
+	"github.com/MamangRust/microservice-ecommerce-pkg/resilience"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

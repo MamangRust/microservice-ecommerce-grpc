@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 
 	"github.com/IBM/sarama"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
 	"go.uber.org/zap"
 )
 

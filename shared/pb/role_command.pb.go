@@ -139,7 +139,7 @@ const file_role_role_command_proto_rawDesc = "" +
 	"\x0eRestoreAllRole\x12\x16.google.protobuf.Empty\x1a\x16.pb.ApiResponseRoleAll\x12H\n" +
 	"\x16DeleteAllRolePermanent\x12\x16.google.protobuf.Empty\x1a\x16.pb.ApiResponseRoleAll\x12H\n" +
 	"\x10AssignRoleToUser\x12\x1b.pb.AssignRoleToUserRequest\x1a\x17.pb.ApiResponseUserRole\x12K\n" +
-	"\x12RemoveRoleFromUser\x12\x1d.pb.RemoveRoleFromUserRequest\x1a\x16.google.protobuf.EmptyB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x12RemoveRoleFromUser\x12\x1d.pb.RemoveRoleFromUserRequest\x1a\x16.google.protobuf.EmptyB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_role_role_command_proto_rawDescOnce sync.Once

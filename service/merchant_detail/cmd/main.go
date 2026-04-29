@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/MamangRust/monolith-ecommerce-grpc-merchant_detail/apps"
-	"github.com/MamangRust/monolith-ecommerce-pkg/server"
+	"github.com/MamangRust/microservice-ecommerce-grpc-merchant_detail/apps"
+	"github.com/MamangRust/microservice-ecommerce-pkg/server"
 )
 
 func main() {

@@ -879,7 +879,7 @@ const file_role_role_common_proto_rawDesc = "" +
 	"\arole_id\x18\x02 \x01(\x05R\x06roleId\"M\n" +
 	"\x19RemoveRoleFromUserRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\x05R\x06userId\x12\x17\n" +
-	"\arole_id\x18\x02 \x01(\x05R\x06roleIdB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\arole_id\x18\x02 \x01(\x05R\x06roleIdB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_role_role_common_proto_rawDescOnce sync.Once

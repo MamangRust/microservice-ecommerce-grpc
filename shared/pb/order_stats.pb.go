@@ -33,7 +33,7 @@ const file_order_order_stats_proto_rawDesc = "" +
 	"\x12FindMonthlyRevenue\x12\x11.pb.FindYearOrder\x1a\x1b.pb.ApiResponseOrderMonthly\x12B\n" +
 	"\x11FindYearlyRevenue\x12\x11.pb.FindYearOrder\x1a\x1a.pb.ApiResponseOrderYearly\x12X\n" +
 	"\x1cFindMonthlyRevenueByMerchant\x12\x1b.pb.FindYearOrderByMerchant\x1a\x1b.pb.ApiResponseOrderMonthly\x12V\n" +
-	"\x1bFindYearlyRevenueByMerchant\x12\x1b.pb.FindYearOrderByMerchant\x1a\x1a.pb.ApiResponseOrderYearlyB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x1bFindYearlyRevenueByMerchant\x12\x1b.pb.FindYearOrderByMerchant\x1a\x1a.pb.ApiResponseOrderYearlyB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var file_order_order_stats_proto_goTypes = []any{
 	(*FindYearMonthTotalRevenue)(nil),           // 0: pb.FindYearMonthTotalRevenue

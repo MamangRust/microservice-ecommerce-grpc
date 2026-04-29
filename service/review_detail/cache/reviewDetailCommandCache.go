@@ -3,7 +3,7 @@ package cache
 import (
 	"context"
 
-	"github.com/MamangRust/monolith-ecommerce-shared/cache"
+	"github.com/MamangRust/microservice-ecommerce-shared/cache"
 )
 
 type reviewDetailCommandCache struct {

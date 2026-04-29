@@ -870,7 +870,7 @@ const file_product_product_common_proto_rawDesc = "" +
 	"\x04data\x18\x03 \x03(\v2\x13.pb.ProductResponseR\x04data\x122\n" +
 	"\n" +
 	"pagination\x18\x04 \x01(\v2\x12.pb.PaginationMetaR\n" +
-	"paginationB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"paginationB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_product_product_common_proto_rawDescOnce sync.Once

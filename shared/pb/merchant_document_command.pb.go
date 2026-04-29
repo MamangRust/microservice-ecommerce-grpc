@@ -410,7 +410,7 @@ const file_merchant_document_merchant_document_command_proto_rawDesc = "" +
 	"\x0fDeletePermanent\x12*.pb.DeleteMerchantDocumentPermanentRequest\x1a%.pb.ApiResponseMerchantDocumentDelete\x12H\n" +
 	"\n" +
 	"RestoreAll\x12\x16.google.protobuf.Empty\x1a\".pb.ApiResponseMerchantDocumentAll\x12P\n" +
-	"\x12DeleteAllPermanent\x12\x16.google.protobuf.Empty\x1a\".pb.ApiResponseMerchantDocumentAllB4Z2github.com/MamangRust/monolith-ecommerce-shared/pbb\x06proto3"
+	"\x12DeleteAllPermanent\x12\x16.google.protobuf.Empty\x1a\".pb.ApiResponseMerchantDocumentAllB4Z2github.com/MamangRust/microservice-ecommerce-shared/pbb\x06proto3"
 
 var (
 	file_merchant_document_merchant_document_command_proto_rawDescOnce sync.Once

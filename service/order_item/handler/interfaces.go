@@ -1,6 +1,6 @@
 package handler
 
-import "github.com/MamangRust/monolith-ecommerce-shared/pb"
+import "github.com/MamangRust/microservice-ecommerce-shared/pb"
 
 type OrderItemQueryHandler interface {
 	pb.OrderItemQueryServiceServer

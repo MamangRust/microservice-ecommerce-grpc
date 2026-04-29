@@ -1,10 +1,10 @@
 package merchantsociallinkhandler
 
 import (
-	pb "github.com/MamangRust/monolith-ecommerce-shared/pb"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	apimapper "github.com/MamangRust/monolith-ecommerce-shared/mapper/merchant_social_link"
-	sharedErrors "github.com/MamangRust/monolith-ecommerce-shared/errors"
+	pb "github.com/MamangRust/microservice-ecommerce-shared/pb"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	apimapper "github.com/MamangRust/microservice-ecommerce-shared/mapper/merchant_social_link"
+	sharedErrors "github.com/MamangRust/microservice-ecommerce-shared/errors"
 	"github.com/labstack/echo/v4"
 	"google.golang.org/grpc"
 )

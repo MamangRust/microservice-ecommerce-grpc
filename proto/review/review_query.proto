@@ -4,7 +4,7 @@ package pb;
 
 import "review/review_common.proto";
 
-option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+option go_package = "github.com/MamangRust/microservice-ecommerce-shared/pb";
 
 message FindAllReviewProductRequest {
     int32 product_id = 1;

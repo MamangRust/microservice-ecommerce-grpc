@@ -6,11 +6,11 @@ import (
 	"time"
 
 	"github.com/IBM/sarama"
-	"github.com/MamangRust/monolith-ecommerce-grpc-role/service"
-	"github.com/MamangRust/monolith-ecommerce-pkg/kafka"
-	"github.com/MamangRust/monolith-ecommerce-pkg/logger"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/requests"
-	"github.com/MamangRust/monolith-ecommerce-shared/domain/response"
+	"github.com/MamangRust/microservice-ecommerce-grpc-role/service"
+	"github.com/MamangRust/microservice-ecommerce-pkg/kafka"
+	"github.com/MamangRust/microservice-ecommerce-pkg/logger"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/requests"
+	"github.com/MamangRust/microservice-ecommerce-shared/domain/response"
 	"go.uber.org/zap"
 )
 
