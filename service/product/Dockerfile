@@ -5,7 +5,9 @@ WORKDIR /app
 # Copy dependency manifests first (cache friendly)
 COPY shared/go.mod shared/go.sum ./shared/
 COPY pkg/go.mod pkg/go.sum ./pkg/
-COPY service/product/go.mod service/product/go.sum ./service/product/
+# Copy all service go.mod files because they are inter-dependent via replacements in pb/go.mod
+COPY service/ ./service/
+RUN find service -type f ! -name "go.mod" ! -name "go.sum" -delete
 
 WORKDIR /app/service/product
 
@@ -18,7 +20,7 @@ WORKDIR /app
 # Copy source
 COPY shared/ ./shared/
 COPY pkg/ ./pkg/
-COPY service/product/ ./service/product/
+COPY service/ ./service/
 
 WORKDIR /app/service/product
 
@@ -39,10 +41,12 @@ WORKDIR /app
 RUN mkdir -p /var/log/app && chown -R 1000:1000 /var/log/app
 
 COPY --from=builder /app/product_bin ./product
+COPY service/product/database/migrations ./migrations
 
-RUN chown -R 1000:1000 ./product
+RUN chown -R 1000:1000 ./product ./migrations
 
 USER appuser
 
 EXPOSE 50058
+
 CMD ["./product"]

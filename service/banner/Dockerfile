@@ -5,7 +5,9 @@ WORKDIR /app
 # Copy dependency manifests first (cache friendly)
 COPY shared/go.mod shared/go.sum ./shared/
 COPY pkg/go.mod pkg/go.sum ./pkg/
-COPY service/banner/go.mod service/banner/go.sum ./service/banner/
+# Copy all service go.mod files because they are inter-dependent via replacements in pb/go.mod
+COPY service/ ./service/
+RUN find service -type f ! -name "go.mod" ! -name "go.sum" -delete
 
 WORKDIR /app/service/banner
 
@@ -18,7 +20,7 @@ WORKDIR /app
 # Copy source
 COPY shared/ ./shared/
 COPY pkg/ ./pkg/
-COPY service/banner/ ./service/banner/
+COPY service/ ./service/
 
 WORKDIR /app/service/banner
 
@@ -39,10 +41,12 @@ WORKDIR /app
 RUN mkdir -p /var/log/app && chown -R 1000:1000 /var/log/app
 
 COPY --from=builder /app/banner_bin ./banner
+COPY service/banner/database/migrations ./migrations
 
-RUN chown -R 1000:1000 ./banner
+RUN chown -R 1000:1000 ./banner ./migrations
 
 USER appuser
 
 EXPOSE 50064
+
 CMD ["./banner"]

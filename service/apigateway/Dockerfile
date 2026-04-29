@@ -5,7 +5,9 @@ WORKDIR /app
 # Copy dependency manifests first (cache friendly)
 COPY shared/go.mod shared/go.sum ./shared/
 COPY pkg/go.mod pkg/go.sum ./pkg/
-COPY service/apigateway/go.mod service/apigateway/go.sum ./service/apigateway/
+# Copy all service go.mod files because they are inter-dependent via replacements in pb/go.mod
+COPY service/ ./service/
+RUN find service -type f ! -name "go.mod" ! -name "go.sum" -delete
 
 WORKDIR /app/service/apigateway
 
@@ -18,7 +20,7 @@ WORKDIR /app
 # Copy source
 COPY shared/ ./shared/
 COPY pkg/ ./pkg/
-COPY service/apigateway/ ./service/apigateway/
+COPY service/ ./service/
 
 WORKDIR /app/service/apigateway
 
@@ -40,9 +42,11 @@ RUN mkdir -p /var/log/app && chown -R 1000:1000 /var/log/app
 
 COPY --from=builder /app/apigateway_bin ./apigateway
 
-RUN chown -R 1000:1000 ./apigateway
+
+RUN chown -R 1000:1000 ./apigateway 
 
 USER appuser
 
 EXPOSE 5000
+
 CMD ["./apigateway"]

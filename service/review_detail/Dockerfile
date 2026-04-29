@@ -5,7 +5,9 @@ WORKDIR /app
 # Copy dependency manifests first (cache friendly)
 COPY shared/go.mod shared/go.sum ./shared/
 COPY pkg/go.mod pkg/go.sum ./pkg/
-COPY service/review_detail/go.mod service/review_detail/go.sum ./service/review_detail/
+# Copy all service go.mod files because they are inter-dependent via replacements in pb/go.mod
+COPY service/ ./service/
+RUN find service -type f ! -name "go.mod" ! -name "go.sum" -delete
 
 WORKDIR /app/service/review_detail
 
@@ -18,7 +20,7 @@ WORKDIR /app
 # Copy source
 COPY shared/ ./shared/
 COPY pkg/ ./pkg/
-COPY service/review_detail/ ./service/review_detail/
+COPY service/ ./service/
 
 WORKDIR /app/service/review_detail
 
@@ -39,10 +41,12 @@ WORKDIR /app
 RUN mkdir -p /var/log/app && chown -R 1000:1000 /var/log/app
 
 COPY --from=builder /app/review_detail_bin ./review_detail
+COPY service/review_detail/database/migrations ./migrations
 
-RUN chown -R 1000:1000 ./review_detail
+RUN chown -R 1000:1000 ./review_detail ./migrations
 
 USER appuser
 
 EXPOSE 50069
+
 CMD ["./review_detail"]

@@ -4,9 +4,10 @@ WORKDIR /app
 
 # Copy dependency manifests first (cache friendly)
 COPY shared/go.mod shared/go.sum ./shared/
-COPY pb/go.mod pb/go.sum ./pb/
 COPY pkg/go.mod pkg/go.sum ./pkg/
-COPY service/stats-writer/go.mod service/stats-writer/go.sum ./service/stats-writer/
+# Copy all service go.mod files because they are inter-dependent via replacements in pb/go.mod
+COPY service/ ./service/
+RUN find service -type f ! -name "go.mod" ! -name "go.sum" -delete
 
 WORKDIR /app/service/stats-writer
 
@@ -18,9 +19,8 @@ WORKDIR /app
 
 # Copy source
 COPY shared/ ./shared/
-COPY pb/ ./pb/
 COPY pkg/ ./pkg/
-COPY service/stats-writer/ ./service/stats-writer/
+COPY service/ ./service/
 
 WORKDIR /app/service/stats-writer
 
@@ -41,8 +41,9 @@ WORKDIR /app
 RUN mkdir -p /var/log/app && chown -R 1000:1000 /var/log/app
 
 COPY --from=builder /app/stats-writer_bin ./stats-writer
+COPY service/stats-writer/database/migrations ./migrations
 
-RUN chown 1000:1000 ./stats-writer
+RUN chown -R 1000:1000 ./stats-writer ./migrations
 
 USER appuser
 

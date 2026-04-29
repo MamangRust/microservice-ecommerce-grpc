@@ -5,7 +5,9 @@ WORKDIR /app
 # Copy dependency manifests first (cache friendly)
 COPY shared/go.mod shared/go.sum ./shared/
 COPY pkg/go.mod pkg/go.sum ./pkg/
-COPY service/role/go.mod service/role/go.sum ./service/role/
+# Copy all service go.mod files because they are inter-dependent via replacements in pb/go.mod
+COPY service/ ./service/
+RUN find service -type f ! -name "go.mod" ! -name "go.sum" -delete
 
 WORKDIR /app/service/role
 
@@ -18,7 +20,7 @@ WORKDIR /app
 # Copy source
 COPY shared/ ./shared/
 COPY pkg/ ./pkg/
-COPY service/role/ ./service/role/
+COPY service/ ./service/
 
 WORKDIR /app/service/role
 
@@ -39,10 +41,12 @@ WORKDIR /app
 RUN mkdir -p /var/log/app && chown -R 1000:1000 /var/log/app
 
 COPY --from=builder /app/role_bin ./role
+COPY service/role/database/migrations ./migrations
 
-RUN chown -R 1000:1000 ./role
+RUN chown -R 1000:1000 ./role ./migrations
 
 USER appuser
 
 EXPOSE 50052
+
 CMD ["./role"]
