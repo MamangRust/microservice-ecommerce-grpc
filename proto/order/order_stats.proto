@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+
+import "order/order_common.proto";
+
+service OrderStatsService {
+    rpc FindMonthlyTotalRevenue(FindYearMonthTotalRevenue) returns (ApiResponseOrderMonthlyTotalRevenue);
+    rpc FindYearlyTotalRevenue(FindYearTotalRevenue) returns (ApiResponseOrderYearlyTotalRevenue);
+
+    rpc FindMonthlyTotalRevenueByMerchant(FindYearMonthTotalRevenueByMerchant) returns (ApiResponseOrderMonthlyTotalRevenue);
+    rpc FindYearlyTotalRevenueByMerchant(FindYearTotalRevenueByMerchant) returns (ApiResponseOrderYearlyTotalRevenue);
+
+    rpc FindMonthlyRevenue(FindYearOrder) returns(ApiResponseOrderMonthly);
+    rpc FindYearlyRevenue(FindYearOrder) returns(ApiResponseOrderYearly);
+
+    rpc FindMonthlyRevenueByMerchant(FindYearOrderByMerchant) returns(ApiResponseOrderMonthly);
+    rpc FindYearlyRevenueByMerchant(FindYearOrderByMerchant) returns(ApiResponseOrderYearly);
+}

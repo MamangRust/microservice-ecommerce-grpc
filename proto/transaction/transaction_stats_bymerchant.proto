@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package pb;
+
+import "transaction/transaction_common.proto";
+
+option go_package = "github.com/MamangRust/monolith-ecommerce-shared/pb";
+
+service TransactionStatsByMerchantService {
+    rpc GetMonthlyAmountSuccessByMerchant(MonthAmountTransactionMerchantRequest) returns (ApiResponseTransactionMonthAmountSuccess);
+    rpc GetYearlyAmountSuccessByMerchant(YearAmountTransactionMerchantRequest) returns (ApiResponseTransactionYearAmountSuccess);
+    rpc GetMonthlyAmountFailedByMerchant(MonthAmountTransactionMerchantRequest) returns (ApiResponseTransactionMonthAmountFailed);
+    rpc GetYearlyAmountFailedByMerchant(YearAmountTransactionMerchantRequest) returns (ApiResponseTransactionYearAmountFailed);
+    rpc GetMonthlyTransactionMethodByMerchantSuccess(MonthMethodTransactionMerchantRequest) returns (ApiResponseTransactionMonthPaymentMethod);
+    rpc GetYearlyTransactionMethodByMerchantSuccess(YearMethodTransactionMerchantRequest) returns (ApiResponseTransactionYearPaymentmethod);
+    rpc GetMonthlyTransactionMethodByMerchantFailed(MonthMethodTransactionMerchantRequest) returns (ApiResponseTransactionMonthPaymentMethod);
+    rpc GetYearlyTransactionMethodByMerchantFailed(YearMethodTransactionMerchantRequest) returns (ApiResponseTransactionYearPaymentmethod);
+}
